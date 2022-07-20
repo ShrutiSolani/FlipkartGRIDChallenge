@@ -28,7 +28,7 @@ export default class CrossroadsSection
             base: this.resources.items.crossroadsStaticBase.scene,
             collision: this.resources.items.crossroadsStaticCollision.scene,
             floorShadowTexture: this.resources.items.crossroadsStaticFloorShadowTexture,
-            offset: new THREE.Vector3(this.x, this.y, 0),
+            offset: new THREE.Vector3(this.x, this.y , 0),
             mass: 0
         })
     }

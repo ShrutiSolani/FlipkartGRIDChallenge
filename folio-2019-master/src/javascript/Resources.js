@@ -19,6 +19,11 @@ import matcapYellowSource from "../models/matcaps/yellow.png";
 import matcapMetalSource from "../models/matcaps/metal.png";
 // import matcapGoldSource from '../models/matcaps/gold.png'
 
+// Avatars
+import avatarManSource from "../models/startingScreen/man.glb";
+
+
+
 // Intro
 import introStaticBaseSource from "../models/intro/static/base.glb";
 import introStaticCollisionSource from "../models/intro/static/collision.glb";
@@ -251,6 +256,8 @@ export default class Resources extends EventEmitter {
             { name: "matcapMetal", source: matcapMetalSource, type: "texture" },
             // { name: 'matcapGold', source: matcapGoldSource, type: 'texture' },
 
+            // Avatars
+            { name: "avatarMan", source: avatarManSource },
             // Intro
             { name: "introStaticBase", source: introStaticBaseSource },
             {
