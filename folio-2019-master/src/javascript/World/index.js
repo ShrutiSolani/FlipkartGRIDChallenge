@@ -533,14 +533,14 @@ export default class {
         this.container.add(this.sections.projects.container);
 
         // Information
-        // this.sections.information = new InformationSection({
-        //     ...options,
-        //     x: 1.2,
-        //     y: -55,
-        //     // x: 0,
-        //     // y: - 10
-        // });
-        // this.container.add(this.sections.information.container);
+        this.sections.information = new InformationSection({
+            ...options,
+            x: 1.2,
+            y: -55,
+            // x: 0,
+            // y: - 10
+        });
+        this.container.add(this.sections.information.container);
 
         // Playground
         this.sections.playground = new PlaygroundSection({
