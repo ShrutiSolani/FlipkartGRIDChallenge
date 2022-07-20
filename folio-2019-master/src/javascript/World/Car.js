@@ -115,7 +115,7 @@ export default class Car {
 
     setChassis() {
         this.chassis = {};
-        this.chassis.offset = new THREE.Vector3(0, 0, -0.28);
+        this.chassis.offset = new THREE.Vector3(0, 0.2, -0.28);
         this.chassis.object = this.objects.getConvertedMesh(
             this.models.chassis.scene.children
         );

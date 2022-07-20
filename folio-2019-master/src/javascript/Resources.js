@@ -102,9 +102,9 @@ import projectsDistinctionsCSSDABaseSource from "../models/projects/distinctions
 import projectsDistinctionsCSSDACollisionSource from "../models/projects/distinctions/cssda/collision.glb";
 
 import projectsThreejsJourneyFloorSource from "../models/projects/threejsJourney/test.png";
-import projectsMadboxFloorSource from "../models/projects/madbox/floorTexture.png";
-import projectsScoutFloorSource from "../models/projects/scout/floorTexture.png";
-import projectsChartogneFloorSource from "../models/projects/chartogne/floorTexture.png";
+import projectsMadboxFloorSource from "../models/projects/madbox/women.png";
+import projectsScoutFloorSource from "../models/projects/scout/men.png";
+import projectsChartogneFloorSource from "../models/projects/chartogne/electronics.png";
 import projectsZenlyFloorSource from "../models/projects/zenly/floorTexture.png";
 import projectsCitrixRedbullFloorSource from "../models/projects/citrixRedbull/floorTexture.png";
 import projectsPriorHoldingsFloorSource from "../models/projects/priorHoldings/floorTexture.png";
