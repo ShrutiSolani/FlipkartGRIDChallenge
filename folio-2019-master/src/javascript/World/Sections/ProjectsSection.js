@@ -2,9 +2,9 @@ import * as THREE from 'three'
 import Project from './Project'
 import TweenLite from 'gsap/TweenLite'
 
-import projectsThreejsJourneySlideASources from '../../../models/projects/threejsJourney/slideA.jpg'
-import projectsThreejsJourneySlideBSources from '../../../models/projects/threejsJourney/slideB.jpg'
-import projectsThreejsJourneySlideCSources from '../../../models/projects/threejsJourney/slideC.jpg'
+import projectsThreejsJourneySlideASources from '../../../models/projects/Necklace1/neck.png'
+import projectsThreejsJourneySlideBSources from '../../../models/projects/Necklace1/neck1.png'
+import projectsThreejsJourneySlideCSources from '../../../models/projects/Necklace1/neck3.png'
 import projectsThreejsJourneySlideDSources from '../../../models/projects/threejsJourney/slideD.jpg'
 
 import projectsMadboxSlideASources from '../../../models/projects/madbox/slideA.jpg'
@@ -124,7 +124,7 @@ export default class ProjectsSection
                 floorTexture: this.resources.items.projectsThreejsJourneyFloorTexture,
                 link:
                 {
-                    href: 'https://threejs-journey.com?c=p3',
+                    href: 'http://127.0.0.1:5000/',
                     x: - 4.8,
                     y: - 3,
                     halfExtents:
@@ -149,7 +149,7 @@ export default class ProjectsSection
                 floorTexture: this.resources.items.projectsMadboxFloorTexture,
                 link:
                 {
-                    href: 'https://madbox.io',
+                    href: 'http://127.0.0.1:5000/',
                     x: - 4.8,
                     y: - 4,
                     halfExtents:
@@ -175,7 +175,7 @@ export default class ProjectsSection
                 floorTexture: this.resources.items.projectsScoutFloorTexture,
                 link:
                 {
-                    href: 'https://fromscout.com',
+                    href: 'http://127.0.0.1:5000/',
                     x: - 4.8,
                     y: - 2,
                     halfExtents:
@@ -199,7 +199,7 @@ export default class ProjectsSection
                 floorTexture: this.resources.items.projectsChartogneFloorTexture,
                 link:
                 {
-                    href: 'https://chartogne-taillet.com',
+                    href: 'http://127.0.0.1:5000/',
                     x: - 4.8,
                     y: - 3.3,
                     halfExtents:
