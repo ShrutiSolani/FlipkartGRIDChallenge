@@ -19,10 +19,12 @@ export default class InformationSection
         this.container.matrixAutoUpdate = false
 
         this.setStatic()
-        this.setBaguettes()
+        // this.setBaguettes()
         this.setLinks()
-        this.setActivities()
+        // this.setActivities()
         this.setTiles()
+        this.setTilesLeft()
+        this.setTilesRight()
     }
 
     setStatic()
@@ -31,48 +33,48 @@ export default class InformationSection
             base: this.resources.items.informationStaticBase.scene,
             collision: this.resources.items.informationStaticCollision.scene,
             floorShadowTexture: this.resources.items.informationStaticFloorShadowTexture,
-            offset: new THREE.Vector3(this.x, this.y, 0),
+            offset: new THREE.Vector3(this.x + 15, this.y -10, 0),
             mass: 0
         })
     }
 
-    setBaguettes()
-    {
-        this.baguettes = {}
+    // setBaguettes()
+    // {
+    //     this.baguettes = {}
 
-        this.baguettes.x = - 4
-        this.baguettes.y = 6
+    //     this.baguettes.x = 4
+    //     this.baguettes.y = -6
 
-        this.baguettes.a = this.objects.add({
-            base: this.resources.items.informationBaguetteBase.scene,
-            collision: this.resources.items.informationBaguetteCollision.scene,
-            offset: new THREE.Vector3(this.x + this.baguettes.x - 0.56, this.y + this.baguettes.y - 0.666, 0.2),
-            rotation: new THREE.Euler(0, 0, - Math.PI * 37 / 180),
-            duplicated: true,
-            shadow: { sizeX: 0.6, sizeY: 3.5, offsetZ: - 0.15, alpha: 0.35 },
-            mass: 1.5,
-            // soundName: 'woodHit'
-        })
+    //     this.baguettes.a = this.objects.add({
+    //         base: this.resources.items.informationBaguetteBase.scene,
+    //         collision: this.resources.items.informationBaguetteCollision.scene,
+    //         offset: new THREE.Vector3(this.x + this.baguettes.x - 0.56, this.y + this.baguettes.y - 0.666, 0.2),
+    //         rotation: new THREE.Euler(0, 0, - Math.PI * 37 / 180),
+    //         duplicated: true,
+    //         shadow: { sizeX: 0.6, sizeY: 3.5, offsetZ: - 0.15, alpha: 0.35 },
+    //         mass: 1.5,
+    //         // soundName: 'woodHit'
+    //     })
 
-        this.baguettes.b = this.objects.add({
-            base: this.resources.items.informationBaguetteBase.scene,
-            collision: this.resources.items.informationBaguetteCollision.scene,
-            offset: new THREE.Vector3(this.x + this.baguettes.x - 0.8, this.y + this.baguettes.y - 2, 0.5),
-            rotation: new THREE.Euler(0, - 0.5, Math.PI * 60 / 180),
-            duplicated: true,
-            shadow: { sizeX: 0.6, sizeY: 3.5, offsetZ: - 0.15, alpha: 0.35 },
-            mass: 1.5,
-            sleep: false,
-            // soundName: 'woodHit'
-        })
-    }
+    //     this.baguettes.b = this.objects.add({
+    //         base: this.resources.items.informationBaguetteBase.scene,
+    //         collision: this.resources.items.informationBaguetteCollision.scene,
+    //         offset: new THREE.Vector3(this.x + this.baguettes.x - 0.8, this.y + this.baguettes.y - 2, 0.5),
+    //         rotation: new THREE.Euler(0, - 0.5, Math.PI * 60 / 180),
+    //         duplicated: true,
+    //         shadow: { sizeX: 0.6, sizeY: 3.5, offsetZ: - 0.15, alpha: 0.35 },
+    //         mass: 1.5,
+    //         sleep: false,
+    //         // soundName: 'woodHit'
+    //     })
+    // }
 
     setLinks()
     {
         // Set up
         this.links = {}
-        this.links.x = 1.95
-        this.links.y = - 1.5
+        this.links.x = 16.95
+        this.links.y = - 12.5
         this.links.halfExtents = {}
         this.links.halfExtents.x = 1
         this.links.halfExtents.y = 1
@@ -146,39 +148,56 @@ export default class InformationSection
         }
     }
 
-    setActivities()
-    {
-        // Set up
-        this.activities = {}
-        this.activities.x = this.x + 0
-        this.activities.y = this.y - 10
-        this.activities.multiplier = 5.5
+    // setActivities()
+    // {
+    //     // Set up
+    //     this.activities = {}
+    //     this.activities.x = this.x + 0
+    //     this.activities.y = this.y - 10
+    //     this.activities.multiplier = 5.5
 
-        // Geometry
-        this.activities.geometry = new THREE.PlaneBufferGeometry(2 * this.activities.multiplier, 1 * this.activities.multiplier, 1, 1)
+    //     // Geometry
+    //     this.activities.geometry = new THREE.PlaneBufferGeometry(2 * this.activities.multiplier, 1 * this.activities.multiplier, 1, 1)
 
-        // Texture
-        this.activities.texture = this.resources.items.informationActivitiesTexture
-        this.activities.texture.magFilter = THREE.NearestFilter
-        this.activities.texture.minFilter = THREE.LinearFilter
+    //     // Texture
+    //     this.activities.texture = this.resources.items.informationActivitiesTexture
+    //     this.activities.texture.magFilter = THREE.NearestFilter
+    //     this.activities.texture.minFilter = THREE.LinearFilter
 
-        // Material
-        this.activities.material = new THREE.MeshBasicMaterial({ wireframe: false, color: 0xffffff, alphaMap: this.activities.texture, transparent: true })
+    //     // Material
+    //     this.activities.material = new THREE.MeshBasicMaterial({ wireframe: false, color: 0xffffff, alphaMap: this.activities.texture, transparent: true })
 
-        // Mesh
-        this.activities.mesh = new THREE.Mesh(this.activities.geometry, this.activities.material)
-        this.activities.mesh.position.x = this.activities.x
-        this.activities.mesh.position.y = this.activities.y
-        this.activities.mesh.matrixAutoUpdate = false
-        this.activities.mesh.updateMatrix()
-        this.container.add(this.activities.mesh)
-    }
+    //     // Mesh
+    //     this.activities.mesh = new THREE.Mesh(this.activities.geometry, this.activities.material)
+    //     this.activities.mesh.position.x = this.activities.x
+    //     this.activities.mesh.position.y = this.activities.y
+    //     this.activities.mesh.matrixAutoUpdate = false
+    //     this.activities.mesh.updateMatrix()
+    //     this.container.add(this.activities.mesh)
+    // }
 
     setTiles()
     {
         this.tiles.add({
             start: new THREE.Vector2(this.x - 1.2, this.y + 13),
-            delta: new THREE.Vector2(0, - 20)
+            delta: new THREE.Vector2(0, - 25)
         })
     }
+
+    setTilesRight()
+    {
+        this.tiles.add({
+            start: new THREE.Vector2(this.x - 1.2, this.y - 10),
+            delta: new THREE.Vector2(15, 0)
+        })
+    }
+    setTilesLeft()
+    {
+        this.tiles.add({
+            start: new THREE.Vector2(this.x - 1.2, this.y - 5),
+            delta: new THREE.Vector2(-15, 0)
+        })
+    }
+
+    
 }
