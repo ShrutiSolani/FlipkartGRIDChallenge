@@ -17,7 +17,8 @@ import matcapPurpleSource from "../models/matcaps/purple.png";
 import matcapBlueSource from "../models/matcaps/blue.png";
 import matcapYellowSource from "../models/matcaps/yellow.png";
 import matcapMetalSource from "../models/matcaps/metal.png";
-// import matcapGoldSource from '../models/matcaps/gold.png'
+import matcapVibrantBlueSource from "../models/matcaps/vibrantBlue.png";
+import matcapGoldSource from '../models/matcaps/gold.png'
 
 // Avatars
 import avatarManSource from "../models/startingScreen/man.glb";
@@ -254,7 +255,8 @@ export default class Resources extends EventEmitter {
                 type: "texture",
             },
             { name: "matcapMetal", source: matcapMetalSource, type: "texture" },
-            // { name: 'matcapGold', source: matcapGoldSource, type: 'texture' },
+            { name: 'matcapGold', source: matcapGoldSource, type: 'texture' },
+            { name: 'matcapVibrantBlue', source: matcapVibrantBlueSource, type: 'texture' },
 
             // Avatars
             { name: "avatarMan", source: avatarManSource },
