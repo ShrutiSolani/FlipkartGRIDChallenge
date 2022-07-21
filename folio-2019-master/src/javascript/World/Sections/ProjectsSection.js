@@ -123,7 +123,7 @@ export default class ProjectsSection
                 floorTexture: this.resources.items.projectsThreejsJourneyFloorTexture,
                 link:
                 {
-                    href: 'http://127.0.0.1:5000/',
+                    href: 'http://127.0.0.1:5000/accessories',
                     x: - 4.8,
                     y: - 3,
                     halfExtents:
@@ -148,7 +148,7 @@ export default class ProjectsSection
                 floorTexture: this.resources.items.projectsMadboxFloorTexture,
                 link:
                 {
-                    href: 'http://127.0.0.1:5000/',
+                    href: 'http://127.0.0.1:5000/accessories',
                     x: - 4.8,
                     y: - 4,
                     halfExtents:
@@ -174,7 +174,7 @@ export default class ProjectsSection
                 floorTexture: this.resources.items.projectsScoutFloorTexture,
                 link:
                 {
-                    href: 'http://127.0.0.1:5000/',
+                    href: 'http://127.0.0.1:5000/accessories',
                     x: - 4.8,
                     y: - 2,
                     halfExtents:

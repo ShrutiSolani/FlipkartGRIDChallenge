@@ -10,32 +10,35 @@ app = Flask(__name__)
 CART = []
 
 
-@app.route('/')
-def index():
-    return render_template('index.html')
+@app.route('/accessories')
+def accessories():
+    return render_template('accessories.html')
 
+#
+# @app.route('/')
+# def index():
+#     return render_template('index.html')
 
-@app.route('/checkOut')
-def checkOut():
-    return render_template('checkout.html')
+#
+# @app.route('/checkOut')
+# def checkOut():
+#     return render_template('checkout.html')
 
 
 @app.route('/tryon/<file_path>', methods=['POST', 'GET'])
 def tryon(file_path):
     file_path = file_path.replace(',', '/')
-    print(file_path)
-    print('python tryOn.py ' + file_path)
     os.system('python tryOn.py ' + file_path)
-    return redirect('http://127.0.0.1:5000/', code=302, Response=None)
+    return redirect('http://127.0.0.1:5000/accessories', code=302, Response=None)
 
-
-@app.route('/tryall', methods=['POST', 'GET'])
-def tryall():
-    print("YESSS")
-    if request.method == 'POST':
-        cart = request.form['mydata'].replace(',', '/')
-        os.system('python test.py ' + cart)
-        render_template('checkout.html', message='')
+#
+# @app.route('/tryall', methods=['POST', 'GET'])
+# def tryall():
+#     print("YESSS")
+#     if request.method == 'POST':
+#         cart = request.form['mydata'].replace(',', '/')
+#         os.system('python test.py ' + cart)
+#         render_template('checkout.html', message='')
 
 
 def gen(camera):
@@ -45,13 +48,13 @@ def gen(camera):
                b'Content-Type: image/jpeg\r\n\r\n' + frame + b'\r\n\r\n')
 
 
-@app.route("/cart/<file_path>", methods=['POST', 'GET'])
-def cart(file_path):
-    global CART
-    file_path = file_path.replace(',', '/')
-    print("ADDED", file_path)
-    CART.append(file_path)
-    return render_template("checkout.html")
+# @app.route("/cart/<file_path>", methods=['POST', 'GET'])
+# def cart(file_path):
+#     global CART
+#     file_path = file_path.replace(',', '/')
+#     print("ADDED", file_path)
+#     CART.append(file_path)
+#     return render_template("checkout.html")
 
 
 @app.route('/video_feed')
