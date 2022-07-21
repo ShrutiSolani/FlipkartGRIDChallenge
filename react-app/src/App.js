@@ -11,6 +11,11 @@ import Tv from "./pages/Tv";
 import Laptop from "./pages/Laptop";
 import WashingMachine from "./pages/WashingMachine";
 import Microwave from "./pages/Microwave";
+import Women1 from "./pages/Women1";
+import Women2 from "./pages/Women2";
+import Men1 from "./pages/Men1";
+import Men2 from "./pages/Men2";
+import Women3 from "./pages/Women3";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 function App() {
@@ -25,6 +30,11 @@ function App() {
         <Route exact path="/laptop" element={<Laptop />} />
         <Route exact path="/wm" element={<WashingMachine />} />
         <Route exact path="/microwave" element={<Microwave />} />
+        <Route exact path="/women1" element={<Women1 />} />
+        <Route exact path="/women2" element={<Women2 />} />
+        <Route exact path="/men1" element={<Men1 />} />
+        <Route exact path="/men2" element={<Men2 />} />
+        <Route exact path="/women3" element={<Women3 />} />
       </Routes>
     </Router>
   );
