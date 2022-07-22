@@ -115,8 +115,8 @@ export default class ProjectsSection
     }
 
     setList()
-    {
-        this.list = [
+    { 
+            this.list = [
             {
                 name: 'Three.js Journey',
                 imageSources:
