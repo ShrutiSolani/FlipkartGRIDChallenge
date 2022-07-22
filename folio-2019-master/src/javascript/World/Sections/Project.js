@@ -187,19 +187,54 @@ export default class Project
         }
 
         // Area
-        this.floor.area = this.areas.add({
-            position: new THREE.Vector2(this.x + this.link.x, this.y + this.floor.y + this.link.y),
-            halfExtents: new THREE.Vector2(this.link.halfExtents.x, this.link.halfExtents.y)
-        })
-        this.floor.area.on('interact', () =>
-        {
-            window.open(this.link.href, '_blank')
-        })
+        // console.log(this.link);
+        // console.log(this.floor);
+        // console.log(this.areas);
+
+        for(let i = 0; i < this.link.length; i++){ 
+            const link = this.link[i];
+            this.floor.area = this.areas.add({
+                position: new THREE.Vector2(this.x + link.x, this.y + this.floor.y + link.y),
+                halfExtents: new THREE.Vector2(link.halfExtents.x, link.halfExtents.y)
+            })
+            this.floor.area.on('interact', () =>
+            {
+                window.open(link.href, '_blank')
+            })
+        }
+        // this.link.forEach(openLink(this.floor));
+
+        // function openLink(link, floor){
+        //     console.log(floor);
+            // floor.area = areas.add({
+            //     position: new THREE.Vector2(this.x + link.x, this.y + floor.y + link.y),
+            //     halfExtents: new THREE.Vector2(link.halfExtents.x, link.halfExtents.y)
+            // })
+            // floor.area.on('interact', () =>
+            // {
+            //     window.open(link.href, '_blank')
+            // })
+        // }
+        // if(this.link.length == 1){
+
+        // }
+        // for(const _link of this.links){
+        //     console.log(_link);
+            // this.floor.area = this.areas.add({
+            //     position: new THREE.Vector2(this.x + _link.x, this.y + this.floor.y + _link.y),
+            //     halfExtents: new THREE.Vector2(_link.halfExtents.x, _link.halfExtents.y)
+            // })
+            // this.floor.area.on('interact', () =>
+            // {
+            //     window.open(_link.href, '_blank')
+            // })
+        // }
+        
 
         // Area label
         this.floor.areaLabel = this.meshes.areaLabel.clone()
-        this.floor.areaLabel.position.x = this.link.x
-        this.floor.areaLabel.position.y = this.link.y
+        // this.floor.areaLabel.position.x = this.link.x
+        // this.floor.areaLabel.position.y = this.link.y
         this.floor.areaLabel.position.z = 0.001
         this.floor.areaLabel.matrixAutoUpdate = false
         this.floor.areaLabel.updateMatrix()

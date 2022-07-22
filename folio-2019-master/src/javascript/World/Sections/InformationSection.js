@@ -98,27 +98,27 @@ export default class InformationSection {
             {
                 href: "http://localhost:3000/microwave",
                 labelTexture:
-                    this.resources.items.informationContactTwitterLabelTexture,
+                    this.resources.items.microwaveLabelTexture,
             },
             {
                 href: "http://localhost:3000/microwave",
                 labelTexture:
-                    this.resources.items.informationContactGithubLabelTexture,
+                    this.resources.items.microwaveLabelTexture,
             },
             {
                 href: "http://localhost:3000/tv",
                 labelTexture:
-                    this.resources.items.informationContactLinkedinLabelTexture,
+                    this.resources.items.televisionLabelTexture,
             },
             {
                 href: "http://localhost:3000/tv",
                 labelTexture:
-                    this.resources.items.informationContactMailLabelTexture,
+                    this.resources.items.televisionLabelTexture,
             },
             {
                 href: "http://localhost:3000/tv",
                 labelTexture:
-                    this.resources.items.informationContactMailLabelTexture,
+                    this.resources.items.televisionLabelTexture,
             },
         ];
 
@@ -202,27 +202,27 @@ export default class InformationSection {
             {
                 href: "http://localhost:3000/fridge",
                 labelTexture:
-                    this.resources.items.informationContactTwitterLabelTexture,
+                    this.resources.items.fridgeLabelTexture,
             },
             {
                 href: "http://localhost:3000/fridge",
                 labelTexture:
-                    this.resources.items.informationContactGithubLabelTexture,
+                    this.resources.items.fridgeLabelTexture,
             },
             {
                 href: "http://localhost:3000/wm",
                 labelTexture:
-                    this.resources.items.informationContactLinkedinLabelTexture,
+                    this.resources.items.washingmachineLabelTexture,
             },
             {
                 href: "http://localhost:3000/wm",
                 labelTexture:
-                    this.resources.items.informationContactMailLabelTexture,
+                    this.resources.items.washingmachineLabelTexture,
             },
             {
                 href: "http://localhost:3000/wm",
                 labelTexture:
-                    this.resources.items.informationContactMailLabelTexture,
+                    this.resources.items.washingmachineLabelTexture,
             },
         ];
 
@@ -305,27 +305,27 @@ export default class InformationSection {
             {
                 href: "http://localhost:3000/tv",
                 labelTexture:
-                    this.resources.items.informationContactTwitterLabelTexture,
+                    this.resources.items.televisionLabelTexture,
             },
             {
                 href: "http://localhost:3000/tv",
                 labelTexture:
-                    this.resources.items.informationContactGithubLabelTexture,
+                    this.resources.items.televisionLabelTexture,
             },
             {
                 href: "http://localhost:3000/laptop",
                 labelTexture:
-                    this.resources.items.informationContactLinkedinLabelTexture,
+                    this.resources.items.laptopLabelTexture,
             },
             {
                 href: "http://localhost:3000/laptop",
                 labelTexture:
-                    this.resources.items.informationContactMailLabelTexture,
+                    this.resources.items.laptopLabelTexture,
             },
             {
                 href: "http://localhost:3000/laptop",
                 labelTexture:
-                    this.resources.items.informationContactMailLabelTexture,
+                    this.resources.items.laptopLabelTexture,
             },
         ];
 
@@ -408,27 +408,27 @@ export default class InformationSection {
             {
                 href: "http://localhost:3000/mobile",
                 labelTexture:
-                    this.resources.items.informationContactTwitterLabelTexture,
+                    this.resources.items.smartphoneLabelTexture,
             },
             {
                 href: "http://localhost:3000/mobile",
                 labelTexture:
-                    this.resources.items.informationContactGithubLabelTexture,
+                    this.resources.items.smartphoneLabelTexture,
             },
             {
                 href: "http://localhost:3000/mobile",
                 labelTexture:
-                    this.resources.items.informationContactLinkedinLabelTexture,
+                    this.resources.items.smartphoneLabelTexture,
             },
             {
                 href: "http://localhost:3000/mobile",
                 labelTexture:
-                    this.resources.items.informationContactMailLabelTexture,
+                    this.resources.items.smartphoneLabelTexture,
             },
             {
                 href: "http://localhost:3000/mobile",
                 labelTexture:
-                    this.resources.items.informationContactMailLabelTexture,
+                    this.resources.items.smartphoneLabelTexture,
             },
         ];
 

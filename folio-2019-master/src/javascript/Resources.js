@@ -81,6 +81,8 @@ import projectsOranoFloorSource from "../models/projects/orano/floorTexture.png"
 // import projectsGleecChatFloorSource from '../models/projects/gleecChat/floorTexture.png'
 import projectsKepplerFloorSource from "../models/projects/keppler/floorTexture.png";
 
+
+
 // Information
 import informationStaticBaseSource from "../models/information/static/base.glb";
 import informationStaticCollisionSource from "../models/information/static/collision.glb";
@@ -89,11 +91,18 @@ import informationStaticFloorShadowSource from "../models/information/static/flo
 import informationBaguetteBaseSource from "../models/information/baguette/base.glb";
 import informationBaguetteCollisionSource from "../models/information/baguette/collision.glb";
 
-import informationContactTwitterLabelSource from "../models/information/static/MICROWAVE.png";
-import informationContactGithubLabelSource from "../models/information/static/MICROWAVE.png";
-import informationContactLinkedinLabelSource from "../models/information/static/tv.png";
-import informationContactMailLabelSource from "../models/information/static/tv.png";
-import informationFridgeSource from "../models/information/static/fridge.png";
+// import informationContactTwitterLabelSource from "../models/information/static/MICROWAVE.png";
+// import informationContactGithubLabelSource from "../models/information/static/MICROWAVE.png";
+// import informationContactLinkedinLabelSource from "../models/information/static/tv.png";
+// import informationContactMailLabelSource from "../models/information/static/tv.png";
+// import informationFridgeSource from "../models/information/static/fridge.png";
+
+import microwaveSource from "../models/information/static/MICROWAVE.png";
+import televisionSource from "../models/information/static/tv.png";
+import fridgeSource from "../models/information/static/fridge.png";
+import laptopSource from "../models/information/static/laptop.png";
+import smartphoneSource from "../models/information/static/phone.png";
+import washingmachineSource from "../models/information/static/wm.png";
 
 import informationActivitiesSource from "../models/information/static/activities.png";
 
@@ -404,38 +413,67 @@ export default class Resources extends EventEmitter {
                 source: informationBaguetteCollisionSource,
             },
 
+            // {
+            //     name: "informationContactTwitterLabel",
+            //     source: informationContactTwitterLabelSource,
+            //     type: "texture",
+            // },
+            // {
+            //     name: "informationContactGithubLabel",
+            //     source: informationContactGithubLabelSource,
+            //     type: "texture",
+            // },
+            // {
+            //     name: "informationContactLinkedinLabel",
+            //     source: informationContactLinkedinLabelSource,
+            //     type: "texture",
+            // },
+            // {
+            //     name: "informationContactMailLabel",
+            //     source: informationContactMailLabelSource,
+            //     type: "texture",
+            // },
             {
-                name: "informationContactTwitterLabel",
-                source: informationContactTwitterLabelSource,
+                name: "fridgeLabel",
+                source: fridgeSource,
                 type: "texture",
             },
             {
-                name: "informationContactGithubLabel",
-                source: informationContactGithubLabelSource,
+                name: "laptopLabel",
+                source: laptopSource,
                 type: "texture",
             },
             {
-                name: "informationContactLinkedinLabel",
-                source: informationContactLinkedinLabelSource,
+                name: "microwaveLabel",
+                source: microwaveSource,
                 type: "texture",
             },
             {
-                name: "informationContactMailLabel",
-                source: informationContactMailLabelSource,
+                name: "smartphoneLabel",
+                source: smartphoneSource,
                 type: "texture",
             },
-
+            {
+                name: "televisionLabel",
+                source: televisionSource,
+                type: "texture",
+            },
+            {
+                name: "washingmachineLabel",
+                source: washingmachineSource,
+                type: "texture",
+            },
             {
                 name: "informationActivities",
                 source: informationActivitiesSource,
                 type: "texture",
             },
 
-            {
-                name: "FridgeLabel",
-                source: informationFridgeSource,
-                type: "texture",
-            },
+            // {
+            //     name: "FridgeLabel",
+            //     source: informationFridgeSource,
+            //     type: "texture",
+            // },
 
             // Playground
             {

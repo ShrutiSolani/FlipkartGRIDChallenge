@@ -122,7 +122,7 @@ export default class ProjectsSection
                 ],
                 floorTexture: this.resources.items.projectsThreejsJourneyFloorTexture,
                 link:
-                {
+                [{
                     href: 'http://127.0.0.1:5000/accessories',
                     x: - 4.8,
                     y: - 3,
@@ -131,7 +131,7 @@ export default class ProjectsSection
                         x: 3.2,
                         y: 1.5
                     }
-                },
+                }],
                 distinctions:
                 [
                     { type: 'fwa', x: 3.95, y: 4.15 }
@@ -147,16 +147,29 @@ export default class ProjectsSection
                 ],
                 floorTexture: this.resources.items.projectsMadboxFloorTexture,
                 link:
-                {
-                    href: 'http://127.0.0.1:5000/accessories',
-                    x: - 4.8,
-                    y: - 4,
-                    halfExtents:
+                [
                     {
-                        x: 3.2,
-                        y: 1.5
+                        href: 'http://127.0.0.1:3000/women1',
+                        x: - 4.8,
+                        y: - 4,
+                        halfExtents:
+                        {
+                            x: 3.2,
+                            y: 1.5
+                        }
+                    },
+                    {
+                        href: 'http://127.0.0.1:3000/women2',
+                        x: -12,
+                        y: -4,
+                        halfExtents:
+                        {
+                            x: 3.2,
+                            y: 1.5
+                        }
+
                     }
-                },
+                ],
                 distinctions:
                 [
                     { type: 'awwwards', x: 3.95, y: 4.15 },
@@ -173,7 +186,7 @@ export default class ProjectsSection
                 ],
                 floorTexture: this.resources.items.projectsScoutFloorTexture,
                 link:
-                {
+                [{
                     href: 'http://127.0.0.1:5000/accessories',
                     x: - 4.8,
                     y: - 2,
@@ -182,7 +195,7 @@ export default class ProjectsSection
                         x: 3.2,
                         y: 1.5
                     }
-                },
+                }],
                 distinctions:
                 [
                 ]
@@ -197,7 +210,7 @@ export default class ProjectsSection
                 ],
                 floorTexture: this.resources.items.projectsChartogneFloorTexture,
                 link:
-                {
+                [{
                     href: 'https://www.flipkart.com/laptops/pr?sid=6bo,b5g&otracker=categorytree&fm=neo%2Fmerchandising&iid=M_0ff3bc1c-56ad-475e-b4a9-e7c202f9fbb6_1_372UD5BXDFYS_MC.34WHNYFH5V2Y&otracker=hp_rich_navigation_8_1.navigationCard.RICH_NAVIGATION_Electronics~Laptop%2Band%2BDesktop_34WHNYFH5V2Y&otracker1=hp_rich_navigation_PINNED_neo%2Fmerchandising_NA_NAV_EXPANDABLE_navigationCard_cc_8_L1_view-all&cid=34WHNYFH5V2Y',
                     x: - 4.8,
                     y: - 3.3,
@@ -206,7 +219,7 @@ export default class ProjectsSection
                         x: 3.2,
                         y: 1.5
                     }
-                },
+                }],
                 distinctions:
                 [
                     { type: 'awwwards', x: 3.95, y: 4.15 },
