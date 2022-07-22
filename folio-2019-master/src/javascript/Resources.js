@@ -17,12 +17,11 @@ import matcapPurpleSource from "../models/matcaps/purple.png";
 import matcapBlueSource from "../models/matcaps/blue.png";
 import matcapYellowSource from "../models/matcaps/yellow.png";
 import matcapMetalSource from "../models/matcaps/metal.png";
-// import matcapGoldSource from '../models/matcaps/gold.png'
+import matcapVibrantBlueSource from "../models/matcaps/vibrantBlue.png";
+import matcapGoldSource from "../models/matcaps/gold.png";
 
 // Avatars
 import avatarManSource from "../models/startingScreen/man.glb";
-
-
 
 // Intro
 import introStaticBaseSource from "../models/intro/static/base.glb";
@@ -90,10 +89,11 @@ import informationStaticFloorShadowSource from "../models/information/static/flo
 import informationBaguetteBaseSource from "../models/information/baguette/base.glb";
 import informationBaguetteCollisionSource from "../models/information/baguette/collision.glb";
 
-import informationContactTwitterLabelSource from "../models/information/static/contactTwitterLabel.png";
-import informationContactGithubLabelSource from "../models/information/static/contactGithubLabel.png";
-import informationContactLinkedinLabelSource from "../models/information/static/contactLinkedinLabel.png";
-import informationContactMailLabelSource from "../models/information/static/contactMailLabel.png";
+import informationContactTwitterLabelSource from "../models/information/static/MICROWAVE.png";
+import informationContactGithubLabelSource from "../models/information/static/MICROWAVE.png";
+import informationContactLinkedinLabelSource from "../models/information/static/tv.png";
+import informationContactMailLabelSource from "../models/information/static/tv.png";
+import informationFridgeSource from "../models/information/static/fridge.png";
 
 import informationActivitiesSource from "../models/information/static/activities.png";
 
@@ -199,7 +199,12 @@ export default class Resources extends EventEmitter {
                 type: "texture",
             },
             { name: "matcapMetal", source: matcapMetalSource, type: "texture" },
-            // { name: 'matcapGold', source: matcapGoldSource, type: 'texture' },
+            { name: "matcapGold", source: matcapGoldSource, type: "texture" },
+            {
+                name: "matcapVibrantBlue",
+                source: matcapVibrantBlueSource,
+                type: "texture",
+            },
 
             // Avatars
             { name: "avatarMan", source: avatarManSource },
@@ -423,6 +428,12 @@ export default class Resources extends EventEmitter {
             {
                 name: "informationActivities",
                 source: informationActivitiesSource,
+                type: "texture",
+            },
+
+            {
+                name: "FridgeLabel",
+                source: informationFridgeSource,
                 type: "texture",
             },
 

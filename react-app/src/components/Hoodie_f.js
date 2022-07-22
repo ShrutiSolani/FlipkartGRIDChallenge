@@ -73,5 +73,3 @@ export default function Model({ ...props }) {
     </group>
   );
 }
-
-useGLTF.preload("/hoodie_f.glb");
