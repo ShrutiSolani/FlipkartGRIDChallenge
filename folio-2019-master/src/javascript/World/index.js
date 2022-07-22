@@ -13,6 +13,7 @@ import IntroSection from "./Sections/IntroSection.js";
 import ProjectsSection from "./Sections/ProjectsSection.js";
 import CrossroadsSection from "./Sections/CrossroadsSection.js";
 import InformationSection from "./Sections/InformationSection.js";
+import FitnessSection from "./Sections/FitnessSection.js";
 import PlaygroundSection from "./Sections/PlaygroundSection.js";
 // import DistinctionASection from './Sections/DistinctionASection.js'
 // import DistinctionBSection from './Sections/DistinctionBSection.js'
@@ -541,6 +542,15 @@ export default class {
             // y: - 10
         });
         this.container.add(this.sections.information.container);
+        // Fitness
+        this.sections.fitness = new FitnessSection({
+            ...options,
+            x: -1.2,
+            y: -55,
+            // x: 0,
+            // y: - 10
+        });
+        this.container.add(this.sections.fitness.container);
 
         // Playground
         this.sections.playground = new PlaygroundSection({

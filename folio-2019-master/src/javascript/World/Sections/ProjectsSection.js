@@ -82,6 +82,7 @@ export default class ProjectsSection
         this.setGeometries()
         this.setMeshes()
         this.setList()
+        // this.setList2()
         this.setZone()
 
         // Add all project from the list
@@ -89,6 +90,10 @@ export default class ProjectsSection
         {
             this.add(_options)
         }
+        // for(const _options of this.list2)
+        // {
+        //     this.add1(_options)
+        // }
     }
 
     setGeometries()
@@ -110,8 +115,8 @@ export default class ProjectsSection
     }
 
     setList()
-    {
-        this.list = [
+    { 
+            this.list = [
             {
                 name: 'Three.js Journey',
                 imageSources:
@@ -125,7 +130,7 @@ export default class ProjectsSection
                 [{
                     href: 'http://127.0.0.1:5000/accessories',
                     x: - 4.8,
-                    y: - 3,
+                    y: - 4,
                     halfExtents:
                     {
                         x: 3.2,
@@ -387,6 +392,75 @@ export default class ProjectsSection
             // }
         ]
     }
+    // setList2()
+    // {
+    //     this.list2 = [
+    //         {
+    //             name: 'Three.js Journey',
+    //             imageSources:
+    //             [
+    //                 projectsThreejsJourneySlideASources,
+    //                 projectsThreejsJourneySlideBSources,
+    //                 projectsThreejsJourneySlideCSources,
+    //             ],
+    //             floorTexture: this.resources.items.projectsThreejsJourneyFloorTexture,
+    //             link:
+    //             {
+    //                 href: 'http://127.0.0.1:5000/accessories',
+    //                 x: - 4.8,
+    //                 y: 12,
+    //                 halfExtents:
+    //                 {
+    //                     x: 3.2,
+    //                     y: 1.5
+    //                 }
+    //             },
+                
+    //         },
+    //         {
+    //             name: 'Madbox',
+    //             imageSources:
+    //             [
+    //                 projectsMadboxSlideASources,
+    //                 projectsMadboxSlideBSources,
+    //                 projectsMadboxSlideCSources
+    //             ],
+    //             floorTexture: this.resources.items.projectsMadboxFloorTexture,
+    //             link:
+    //             {
+    //                 href: 'http://127.0.0.1:5000/accessories',
+    //                 x: - 4.8,
+    //                 y: 12,
+    //                 halfExtents:
+    //                 {
+    //                     x: 3.2,
+    //                     y: 1.5
+    //                 }
+    //             },
+    //         },
+    //         {
+    //             name: 'Scout',
+    //             imageSources:
+    //             [
+    //                 projectsScoutSlideASources,
+    //                 projectsScoutSlideBSources,
+    //                 projectsScoutSlideCSources
+    //             ],
+    //             floorTexture: this.resources.items.projectsScoutFloorTexture,
+    //             link:
+    //             {
+    //                 href: 'http://127.0.0.1:5000/accessories',
+    //                 x: - 4.8,
+    //                 y: 12,
+    //                 halfExtents:
+    //                 {
+    //                     x: 3.2,
+    //                     y: 1.5
+    //                 }
+    //             }
+    //         }
+    //     ]
+    // }
 
     setZone()
     {
