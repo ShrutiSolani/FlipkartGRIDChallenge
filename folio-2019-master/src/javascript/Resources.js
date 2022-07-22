@@ -81,8 +81,15 @@ import projectsOranoFloorSource from "../models/projects/orano/floorTexture.png"
 // import projectsGleecChatFloorSource from '../models/projects/gleecChat/floorTexture.png'
 import projectsKepplerFloorSource from "../models/projects/keppler/floorTexture.png";
 
+<<<<<<< HEAD
 
 
+=======
+// Fitness
+import fitnessStaticBaseSource from "../models/fitness/static/base.glb";
+import fitnessStaticCollisionSource from "../models/fitness/static/collision.glb";
+import fitnessStaticFloorShadowSource from "../models/fitness/static/floorShadow.png";
+>>>>>>> 70bff64f1750288b8e984792cc61834f6ffb3878
 // Information
 import informationStaticBaseSource from "../models/information/static/base.glb";
 import informationStaticCollisionSource from "../models/information/static/collision.glb";
@@ -389,6 +396,20 @@ export default class Resources extends EventEmitter {
                 type: "texture",
             },
 
+            // Fitness
+            {
+                name: "fitnessStaticBase",
+                source: fitnessStaticBaseSource,
+            },
+            {
+                name: "fitnessStaticCollision",
+                source: fitnessStaticCollisionSource,
+            },
+            {
+                name: "fitnessStaticFloorShadow",
+                source: fitnessStaticFloorShadowSource,
+                type: "texture",
+            },
             // Information
             {
                 name: "informationStaticBase",
