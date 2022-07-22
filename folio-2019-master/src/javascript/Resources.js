@@ -110,57 +110,57 @@ import washingmachineSource from "../models/information/static/wm.png";
 import informationActivitiesSource from "../models/information/static/activities.png";
 
 // Playground
-import playgroundStaticFloorShadowSource from "../models/playground/static/floorShadow.png";
-import playgroundStaticBaseSource from "../models/playground/static/base.glb";
-import playgroundStaticCollisionSource from "../models/playground/static/collision.glb";
+// import playgroundStaticFloorShadowSource from "../models/playground/static/floorShadow.png";
+// import playgroundStaticBaseSource from "../models/playground/static/base.glb";
+// import playgroundStaticCollisionSource from "../models/playground/static/collision.glb";
 
 // Brick
-import brickBaseSource from "../models/brick/base.glb";
-import brickCollisionSource from "../models/brick/collision.glb";
+// import brickBaseSource from "../models/brick/base.glb";
+// import brickCollisionSource from "../models/brick/collision.glb";
 
 // Horn
-import hornBaseSource from "../models/horn/base.glb";
-import hornCollisionSource from "../models/horn/collision.glb";
+// import hornBaseSource from "../models/horn/base.glb";
+// import hornCollisionSource from "../models/horn/collision.glb";
 
 
 // Awwwards trophy
-import webbyTrophyBaseSource from "../models/webbyTrophy/base.glb";
-import webbyTrophyCollisionSource from "../models/webbyTrophy/collision.glb";
+// import webbyTrophyBaseSource from "../models/webbyTrophy/base.glb";
+// import webbyTrophyCollisionSource from "../models/webbyTrophy/collision.glb";
 
 // Lemon
-import lemonBaseSource from "../models/lemon/base.glb";
-import lemonCollisionSource from "../models/lemon/collision.glb";
+// import lemonBaseSource from "../models/lemon/base.glb";
+// import lemonCollisionSource from "../models/lemon/collision.glb";
 
 // Bowling ball
-import bowlingBallBaseSource from "../models/bowlingBall/base.glb";
-import bowlingBallCollisionSource from "../models/bowlingBall/collision.glb";
+// import bowlingBallBaseSource from "../models/bowlingBall/base.glb";
+// import bowlingBallCollisionSource from "../models/bowlingBall/collision.glb";
 
 // Bowling pin
-import bowlingPinBaseSource from "../models/bowlingPin/base.glb";
-import bowlingPinCollisionSource from "../models/bowlingPin/collision.glb";
+// import bowlingPinBaseSource from "../models/bowlingPin/base.glb";
+// import bowlingPinCollisionSource from "../models/bowlingPin/collision.glb";
 
 // Area
-import areaKeyEnterSource from "../models/area/keyEnter.png";
-import areaEnterSource from "../models/area/enter.png";
-import areaOpenSource from "../models/area/open.png";
-import areaResetSource from "../models/area/reset.png";
-import areaQuestionMarkSource from "../models/area/questionMark.png";
+// import areaKeyEnterSource from "../models/area/keyEnter.png";
+// import areaEnterSource from "../models/area/enter.png";
+// import areaOpenSource from "../models/area/open.png";
+// import areaResetSource from "../models/area/reset.png";
+// import areaQuestionMarkSource from "../models/area/questionMark.png";
 
 // Tiles
-import tilesABaseSource from "../models/tiles/a/base.glb";
-import tilesACollisionSource from "../models/tiles/a/collision.glb";
+// import tilesABaseSource from "../models/tiles/a/base.glb";
+// import tilesACollisionSource from "../models/tiles/a/collision.glb";
 
-import tilesBBaseSource from "../models/tiles/b/base.glb";
-import tilesBCollisionSource from "../models/tiles/b/collision.glb";
+// import tilesBBaseSource from "../models/tiles/b/base.glb";
+// import tilesBCollisionSource from "../models/tiles/b/collision.glb";
 
-import tilesCBaseSource from "../models/tiles/c/base.glb";
-import tilesCCollisionSource from "../models/tiles/c/collision.glb";
+// import tilesCBaseSource from "../models/tiles/c/base.glb";
+// import tilesCCollisionSource from "../models/tiles/c/collision.glb";
 
-import tilesDBaseSource from "../models/tiles/d/base.glb";
-import tilesDCollisionSource from "../models/tiles/d/collision.glb";
+// import tilesDBaseSource from "../models/tiles/d/base.glb";
+// import tilesDCollisionSource from "../models/tiles/d/collision.glb";
 
-import tilesEBaseSource from "../models/tiles/e/base.glb";
-import tilesECollisionSource from "../models/tiles/e/collision.glb";
+// import tilesEBaseSource from "../models/tiles/e/base.glb";
+// import tilesECollisionSource from "../models/tiles/e/collision.glb";
 
 // Konami
 import konamiLabelSource from "../models/konami/label.png";
@@ -493,27 +493,27 @@ export default class Resources extends EventEmitter {
             // },
 
             // Playground
-            {
-                name: "playgroundStaticBase",
-                source: playgroundStaticBaseSource,
-            },
-            {
-                name: "playgroundStaticCollision",
-                source: playgroundStaticCollisionSource,
-            },
-            {
-                name: "playgroundStaticFloorShadow",
-                source: playgroundStaticFloorShadowSource,
-                type: "texture",
-            },
+            // {
+            //     name: "playgroundStaticBase",
+            //     source: playgroundStaticBaseSource,
+            // },
+            // {
+            //     name: "playgroundStaticCollision",
+            //     source: playgroundStaticCollisionSource,
+            // },
+            // {
+            //     name: "playgroundStaticFloorShadow",
+            //     source: playgroundStaticFloorShadowSource,
+            //     type: "texture",
+            // },
 
             // Brick
-            { name: "brickBase", source: brickBaseSource },
-            { name: "brickCollision", source: brickCollisionSource },
+            // { name: "brickBase", source: brickBaseSource },
+            // { name: "brickCollision", source: brickCollisionSource },
 
             // Horn
-            { name: "hornBase", source: hornBaseSource },
-            { name: "hornCollision", source: hornCollisionSource },
+            // { name: "hornBase", source: hornBaseSource },
+            // { name: "hornCollision", source: hornCollisionSource },
 
             // // Distinction A
             // { name: 'distinctionAStaticBase', source: distinctionAStaticBaseSource },
@@ -539,57 +539,57 @@ export default class Resources extends EventEmitter {
             // { name: 'awwwardsTrophyCollision', source: awwwardsTrophyCollisionSource },
 
             // Webby trophy
-            { name: "webbyTrophyBase", source: webbyTrophyBaseSource },
-            {
-                name: "webbyTrophyCollision",
-                source: webbyTrophyCollisionSource,
-            },
+            // { name: "webbyTrophyBase", source: webbyTrophyBaseSource },
+            // {
+            //     name: "webbyTrophyCollision",
+            //     source: webbyTrophyCollisionSource,
+            // },
 
             // Lemon
-            { name: "lemonBase", source: lemonBaseSource },
-            { name: "lemonCollision", source: lemonCollisionSource },
+            // { name: "lemonBase", source: lemonBaseSource },
+            // { name: "lemonCollision", source: lemonCollisionSource },
 
             // Bownling ball
-            { name: "bowlingBallBase", source: bowlingBallBaseSource },
-            {
-                name: "bowlingBallCollision",
-                source: bowlingBallCollisionSource,
-            },
+            // { name: "bowlingBallBase", source: bowlingBallBaseSource },
+            // {
+            //     name: "bowlingBallCollision",
+            //     source: bowlingBallCollisionSource,
+            // },
 
             // Bownling ball
-            { name: "bowlingPinBase", source: bowlingPinBaseSource },
-            { name: "bowlingPinCollision", source: bowlingPinCollisionSource },
+            // { name: "bowlingPinBase", source: bowlingPinBaseSource },
+            // { name: "bowlingPinCollision", source: bowlingPinCollisionSource },
 
             // Areas
-            {
-                name: "areaKeyEnter",
-                source: areaKeyEnterSource,
-                type: "texture",
-            },
-            { name: "areaEnter", source: areaEnterSource, type: "texture" },
-            { name: "areaOpen", source: areaOpenSource, type: "texture" },
-            { name: "areaReset", source: areaResetSource, type: "texture" },
-            {
-                name: "areaQuestionMark",
-                source: areaQuestionMarkSource,
-                type: "texture",
-            },
+            // {
+            //     name: "areaKeyEnter",
+            //     source: areaKeyEnterSource,
+            //     type: "texture",
+            // },
+            // { name: "areaEnter", source: areaEnterSource, type: "texture" },
+            // { name: "areaOpen", source: areaOpenSource, type: "texture" },
+            // { name: "areaReset", source: areaResetSource, type: "texture" },
+            // {
+            //     name: "areaQuestionMark",
+            //     source: areaQuestionMarkSource,
+            //     type: "texture",
+            // },
 
             // Tiles
-            { name: "tilesABase", source: tilesABaseSource },
-            { name: "tilesACollision", source: tilesACollisionSource },
+            // { name: "tilesABase", source: tilesABaseSource },
+            // { name: "tilesACollision", source: tilesACollisionSource },
 
-            { name: "tilesBBase", source: tilesBBaseSource },
-            { name: "tilesBCollision", source: tilesBCollisionSource },
+            // { name: "tilesBBase", source: tilesBBaseSource },
+            // { name: "tilesBCollision", source: tilesBCollisionSource },
 
-            { name: "tilesCBase", source: tilesCBaseSource },
-            { name: "tilesCCollision", source: tilesCCollisionSource },
+            // { name: "tilesCBase", source: tilesCBaseSource },
+            // { name: "tilesCCollision", source: tilesCCollisionSource },
 
-            { name: "tilesDBase", source: tilesDBaseSource },
-            { name: "tilesDCollision", source: tilesDCollisionSource },
+            // { name: "tilesDBase", source: tilesDBaseSource },
+            // { name: "tilesDCollision", source: tilesDCollisionSource },
 
-            { name: "tilesEBase", source: tilesEBaseSource },
-            { name: "tilesECollision", source: tilesECollisionSource },
+            // { name: "tilesEBase", source: tilesEBaseSource },
+            // { name: "tilesECollision", source: tilesECollisionSource },
 
             // Konami
             { name: "konamiLabel", source: konamiLabelSource, type: "texture" },

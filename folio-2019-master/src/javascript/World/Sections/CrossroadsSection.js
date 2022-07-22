@@ -19,7 +19,7 @@ export default class CrossroadsSection
         this.container.matrixAutoUpdate = false
 
         this.setStatic()
-        this.setTiles()
+        // this.setTiles()
     }
 
     setStatic()

@@ -25,8 +25,8 @@ export default class IntroSection
         this.setInstructions()
         this.setOtherInstructions()
         this.setTitles()
-        this.setTiles()
-        this.setDikes()
+        // this.setTiles()
+        // this.setDikes()
     }
 
     setStatic()

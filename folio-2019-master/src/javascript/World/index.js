@@ -14,7 +14,7 @@ import ProjectsSection from "./Sections/ProjectsSection.js";
 import CrossroadsSection from "./Sections/CrossroadsSection.js";
 import InformationSection from "./Sections/InformationSection.js";
 import FitnessSection from "./Sections/FitnessSection.js";
-import PlaygroundSection from "./Sections/PlaygroundSection.js";
+// import PlaygroundSection from "./Sections/PlaygroundSection.js";
 // import DistinctionASection from './Sections/DistinctionASection.js'
 // import DistinctionBSection from './Sections/DistinctionBSection.js'
 // import DistinctionCSection from './Sections/DistinctionCSection.js'
@@ -68,10 +68,10 @@ export default class {
         this.setObjects();
         this.setCar();
         this.areas.car = this.car;
-        this.setTiles();
+        // this.setTiles();
         this.setWalls();
         this.setSections();
-        this.setEasterEggs();
+        // this.setEasterEggs();
     }
 
     setReveal() {
@@ -553,27 +553,27 @@ export default class {
         this.container.add(this.sections.fitness.container);
 
         // Playground
-        this.sections.playground = new PlaygroundSection({
-            ...options,
-            x: -38,
-            y: -34,
-            // x: - 15,
-            // y: - 4
-        });
-        this.container.add(this.sections.playground.container);
+        // this.sections.playground = new PlaygroundSection({
+        //     ...options,
+        //     x: -38,
+        //     y: -34,
+        //     // x: - 15,
+        //     // y: - 4
+        // });
+        // this.container.add(this.sections.playground.container);
     }
 
-    setEasterEggs() {
-        this.easterEggs = new EasterEggs({
-            resources: this.resources,
-            car: this.car,
-            walls: this.walls,
-            objects: this.objects,
-            materials: this.materials,
-            areas: this.areas,
-            config: this.config,
-            physics: this.physics,
-        });
-        this.container.add(this.easterEggs.container);
-    }
+    // setEasterEggs() {
+    //     this.easterEggs = new EasterEggs({
+    //         resources: this.resources,
+    //         car: this.car,
+    //         walls: this.walls,
+    //         objects: this.objects,
+    //         materials: this.materials,
+    //         areas: this.areas,
+    //         config: this.config,
+    //         physics: this.physics,
+    //     });
+    //     this.container.add(this.easterEggs.container);
+    // }
 }
