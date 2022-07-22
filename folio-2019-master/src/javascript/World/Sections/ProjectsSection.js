@@ -115,8 +115,8 @@ export default class ProjectsSection
     }
 
     setList()
-    {
-        this.list = [
+    { 
+            this.list = [
             {
                 name: 'Three.js Journey',
                 imageSources:
@@ -127,7 +127,7 @@ export default class ProjectsSection
                 ],
                 floorTexture: this.resources.items.projectsThreejsJourneyFloorTexture,
                 link:
-                {
+                [{
                     href: 'http://127.0.0.1:5000/accessories',
                     x: - 4.8,
                     y: - 4,
@@ -136,8 +136,11 @@ export default class ProjectsSection
                         x: 3.2,
                         y: 1.5
                     }
-                },
-                
+                }],
+                distinctions:
+                [
+                    { type: 'fwa', x: 3.95, y: 4.15 }
+                ]
             },
             {
                 name: 'Madbox',
@@ -149,16 +152,34 @@ export default class ProjectsSection
                 ],
                 floorTexture: this.resources.items.projectsMadboxFloorTexture,
                 link:
-                {
-                    href: 'http://127.0.0.1:5000/accessories',
-                    x: - 4.8,
-                    y: - 4,
-                    halfExtents:
+                [
                     {
-                        x: 3.2,
-                        y: 1.5
+                        href: 'http://127.0.0.1:3000/women1',
+                        x: - 4.8,
+                        y: - 4,
+                        halfExtents:
+                        {
+                            x: 3.2,
+                            y: 1.5
+                        }
+                    },
+                    {
+                        href: 'http://127.0.0.1:3000/women2',
+                        x: -12,
+                        y: -4,
+                        halfExtents:
+                        {
+                            x: 3.2,
+                            y: 1.5
+                        }
+
                     }
-                },
+                ],
+                distinctions:
+                [
+                    { type: 'awwwards', x: 3.95, y: 4.15 },
+                    { type: 'fwa', x: 5.6, y: 4.15 }
+                ]
             },
             {
                 name: 'Scout',
@@ -170,17 +191,205 @@ export default class ProjectsSection
                 ],
                 floorTexture: this.resources.items.projectsScoutFloorTexture,
                 link:
-                {
+                [{
                     href: 'http://127.0.0.1:5000/accessories',
                     x: - 4.8,
-                    y: - 4,
+                    y: - 2,
                     halfExtents:
                     {
                         x: 3.2,
                         y: 1.5
                     }
-                }
-            }
+                }],
+                distinctions:
+                [
+                ]
+            },
+            {
+                name: 'Chartogne Taillet',
+                imageSources:
+                [
+                    projectsChartogneSlideASources,
+                    projectsChartogneSlideBSources,
+                    projectsChartogneSlideCSources
+                ],
+                floorTexture: this.resources.items.projectsChartogneFloorTexture,
+                link:
+                [{
+                    href: 'https://www.flipkart.com/laptops/pr?sid=6bo,b5g&otracker=categorytree&fm=neo%2Fmerchandising&iid=M_0ff3bc1c-56ad-475e-b4a9-e7c202f9fbb6_1_372UD5BXDFYS_MC.34WHNYFH5V2Y&otracker=hp_rich_navigation_8_1.navigationCard.RICH_NAVIGATION_Electronics~Laptop%2Band%2BDesktop_34WHNYFH5V2Y&otracker1=hp_rich_navigation_PINNED_neo%2Fmerchandising_NA_NAV_EXPANDABLE_navigationCard_cc_8_L1_view-all&cid=34WHNYFH5V2Y',
+                    x: - 4.8,
+                    y: - 3.3,
+                    halfExtents:
+                    {
+                        x: 3.2,
+                        y: 1.5
+                    }
+                }],
+                distinctions:
+                [
+                    { type: 'awwwards', x: 3.95, y: 4.15 },
+                    { type: 'fwa', x: 5.6, y: 4.15 },
+                    { type: 'cssda', x: 7.2, y: 4.15 }
+                ]
+            },
+            // {
+            //     name: 'Zenly',
+            //     imageSources:
+            //     [
+            //         projectsZenlySlideASources,
+            //         projectsZenlySlideBSources,
+            //         projectsZenlySlideCSources
+            //     ],
+            //     floorTexture: this.resources.items.projectsZenlyFloorTexture,
+            //     link:
+            //     {
+            //         href: 'https://zen.ly',
+            //         x: - 4.8,
+            //         y: - 4.2,
+            //         halfExtents:
+            //         {
+            //             x: 3.2,
+            //             y: 1.5
+            //         }
+            //     },
+            //     distinctions:
+            //     [
+            //         { type: 'awwwards', x: 3.95, y: 4.15 },
+            //         { type: 'fwa', x: 5.6, y: 4.15 },
+            //         { type: 'cssda', x: 7.2, y: 4.15 }
+            //     ]
+            // },
+            // {
+            //     name: 'priorHoldings',
+            //     imageSources:
+            //     [
+            //         projectsPriorHoldingsSlideASources,
+            //         projectsPriorHoldingsSlideBSources,
+            //         projectsPriorHoldingsSlideCSources
+            //     ],
+            //     floorTexture: this.resources.items.projectsPriorHoldingsFloorTexture,
+            //     link:
+            //     {
+            //         href: 'https://prior.co.jp/discover/',
+            //         x: - 4.8,
+            //         y: - 3,
+            //         halfExtents:
+            //         {
+            //             x: 3.2,
+            //             y: 1.5
+            //         }
+            //     },
+            //     distinctions:
+            //     [
+            //         { type: 'awwwards', x: 3.95, y: 4.15 },
+            //         { type: 'fwa', x: 5.6, y: 4.15 },
+            //         { type: 'cssda', x: 7.2, y: 4.15 }
+            //     ]
+            // },
+            // {
+            //     name: 'orano',
+            //     imageSources:
+            //     [
+            //         projectsOranoSlideASources,
+            //         projectsOranoSlideBSources,
+            //         projectsOranoSlideCSources
+            //     ],
+            //     floorTexture: this.resources.items.projectsOranoFloorTexture,
+            //     link:
+            //     {
+            //         href: 'https://www.orano.group/experience/innovation/',
+            //         x: - 4.8,
+            //         y: - 3.4,
+            //         halfExtents:
+            //         {
+            //             x: 3.2,
+            //             y: 1.5
+            //         }
+            //     },
+            //     distinctions:
+            //     [
+            //         { type: 'awwwards', x: 3.95, y: 4.15 },
+            //         { type: 'fwa', x: 5.6, y: 4.15 },
+            //         { type: 'cssda', x: 7.2, y: 4.15 }
+            //     ]
+            // },
+            // {
+            //     name: 'citrixRedbull',
+            //     imageSources:
+            //     [
+            //         projectsCitrixRedbullSlideASources,
+            //         projectsCitrixRedbullSlideBSources,
+            //         projectsCitrixRedbullSlideCSources
+            //     ],
+            //     floorTexture: this.resources.items.projectsCitrixRedbullFloorTexture,
+            //     link:
+            //     {
+            //         href: 'https://thenewmobileworkforce.imm-g-prod.com/',
+            //         x: - 4.8,
+            //         y: - 4.4,
+            //         halfExtents:
+            //         {
+            //             x: 3.2,
+            //             y: 1.5
+            //         }
+            //     },
+            //     distinctions:
+            //     [
+            //         { type: 'awwwards', x: 3.95, y: 4.15 },
+            //         { type: 'fwa', x: 5.6, y: 4.15 },
+            //         { type: 'cssda', x: 7.2, y: 4.15 }
+            //     ]
+            // },
+            // {
+            //     name: 'gleecChat',
+            //     imageSources:
+            //     [
+            //         projectsGleecChatSlideASources,
+            //         projectsGleecChatSlideBSources,
+            //         projectsGleecChatSlideCSources,
+            //         projectsGleecChatSlideDSources
+            //     ],
+            //     floorTexture: this.resources.items.projectsGleecChatFloorTexture,
+            //     link:
+            //     {
+            //         href: 'http://gleec.imm-g-prod.com',
+            //         x: - 4.8,
+            //         y: - 3.4,
+            //         halfExtents:
+            //         {
+            //             x: 3.2,
+            //             y: 1.5
+            //         }
+            //     },
+            //     distinctions:
+            //     [
+            //         { type: 'awwwards', x: 3.95, y: 4.15 },
+            //         { type: 'fwa', x: 5.6, y: 4.15 },
+            //         { type: 'cssda', x: 7.2, y: 4.15 }
+            //     ]
+            // },
+            // {
+            //     name: 'keppler',
+            //     imageSources:
+            //     [
+            //         projectsKepplerSlideASources,
+            //         projectsKepplerSlideBSources,
+            //         projectsKepplerSlideCSources
+            //     ],
+            //     floorTexture: this.resources.items.projectsKepplerFloorTexture,
+            //     link:
+            //     {
+            //         href: 'https://brunosimon.github.io/keppler/',
+            //         x: 2.75,
+            //         y: - 1.1,
+            //         halfExtents:
+            //         {
+            //             x: 3.2,
+            //             y: 1.5
+            //         }
+            //     },
+            //     distinctions: []
+            // }
         ]
     }
     // setList2()
