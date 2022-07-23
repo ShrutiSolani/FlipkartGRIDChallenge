@@ -23,9 +23,9 @@ export default class InformationSection {
         this.setLinksRow3();
         this.setLinksRow4();
         // this.setActivities()
-        this.setTiles();
-        this.setTilesLeft();
-        this.setTilesRight();
+        // this.setTiles();
+        // this.setTilesLeft();
+        // this.setTilesRight();
     }
 
     setStatic() {

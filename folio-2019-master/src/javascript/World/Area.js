@@ -128,8 +128,8 @@ export default class Area extends EventEmitter
         this.key.enter.geometry = new THREE.PlaneBufferGeometry(this.key.enter.size, this.key.enter.size / 4, 1, 1)
 
         this.key.enter.texture = this.resources.items.areaEnterTexture
-        this.key.enter.texture.magFilter = THREE.NearestFilter
-        this.key.enter.texture.minFilter = THREE.LinearFilter
+        // this.key.enter.texture.magFilter = THREE.NearestFilter
+        // this.key.enter.texture.minFilter = THREE.LinearFilter
 
         this.key.enter.material = new THREE.MeshBasicMaterial({ color: 0xffffff, alphaMap: this.key.enter.texture, transparent: true, opacity: 0, depthWrite: false })
 
@@ -146,8 +146,8 @@ export default class Area extends EventEmitter
         this.key.icon.geometry = new THREE.PlaneBufferGeometry(this.key.icon.size, this.key.icon.size, 1, 1)
 
         this.key.icon.texture = this.resources.items.areaKeyEnterTexture
-        this.key.icon.texture.magFilter = THREE.NearestFilter
-        this.key.icon.texture.minFilter = THREE.LinearFilter
+        // this.key.icon.texture.magFilter = THREE.NearestFilter
+        // this.key.icon.texture.minFilter = THREE.LinearFilter
 
         this.key.icon.material = new THREE.MeshBasicMaterial({ color: 0xffffff, alphaMap: this.key.icon.texture, transparent: true, opacity: 0, depthWrite: false })
 
