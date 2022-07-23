@@ -115,7 +115,7 @@ export default class Project
         this.boards.items = []
         this.boards.xStart = - 5
         this.boards.xInter = 5
-        this.boards.y = 27
+        this.boards.y = 10
         this.boards.color = '#8e7161'
         this.boards.threeColor = new THREE.Color(this.boards.color)
 

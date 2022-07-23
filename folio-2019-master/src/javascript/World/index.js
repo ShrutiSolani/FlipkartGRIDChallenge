@@ -536,8 +536,8 @@ export default class {
         // Information
         this.sections.information = new InformationSection({
             ...options,
-            x: 1.2,
-            y: -55,
+            x: -20,
+            y: -45,
             // x: 0,
             // y: - 10
         });
@@ -546,7 +546,7 @@ export default class {
         this.sections.fitness = new FitnessSection({
             ...options,
             x: -1.2,
-            y: -55,
+            y: -10,
             // x: 0,
             // y: - 10
         });
