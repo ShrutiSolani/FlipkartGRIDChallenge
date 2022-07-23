@@ -122,7 +122,6 @@ import informationActivitiesSource from "../models/information/static/activities
 // import hornBaseSource from "../models/horn/base.glb";
 // import hornCollisionSource from "../models/horn/collision.glb";
 
-
 // Awwwards trophy
 // import webbyTrophyBaseSource from "../models/webbyTrophy/base.glb";
 // import webbyTrophyCollisionSource from "../models/webbyTrophy/collision.glb";
@@ -142,7 +141,7 @@ import informationActivitiesSource from "../models/information/static/activities
 // Area
 // import areaKeyEnterSource from "../models/area/keyEnter.png";
 // import areaEnterSource from "../models/area/enter.png";
-// import areaOpenSource from "../models/area/open.png";
+import areaOpenSource from "../models/area/open.png";
 // import areaResetSource from "../models/area/reset.png";
 // import areaQuestionMarkSource from "../models/area/questionMark.png";
 
@@ -171,7 +170,6 @@ import wig1Source from "../models/wigs/wig1.glb";
 import wig2Source from "../models/wigs/wig2.glb";
 import wig3Source from "../models/wigs/wig3.glb";
 import wig4Source from "../models/wigs/wig4.glb";
-
 
 export default class Resources extends EventEmitter {
     constructor() {
@@ -217,6 +215,8 @@ export default class Resources extends EventEmitter {
                 source: matcapVibrantBlueSource,
                 type: "texture",
             },
+
+            { name: "areaOpen", source: areaOpenSource, type: "texture" },
 
             // Avatars
             { name: "avatarMan", source: avatarManSource },
