@@ -213,58 +213,6 @@ export default class Project
         this.floor.mesh.matrixAutoUpdate = false
         this.floor.container.add(this.floor.mesh)
 
-        // Distinctions
-        // if(this.distinctions)
-        // {
-        //     for(const _distinction of this.distinctions)
-        //     {
-        //         let base = null
-        //         let collision = null
-        //         let shadowSizeX = null
-        //         let shadowSizeY = null
-
-        //         switch(_distinction.type)
-        //         {
-        //             case 'awwwards':
-        //                 base = this.resources.items.projectsDistinctionsAwwwardsBase.scene
-        //                 collision = this.resources.items.projectsDistinctionsAwwwardsCollision.scene
-        //                 shadowSizeX = 1.5
-        //                 shadowSizeY = 1.5
-        //                 break
-
-        //             case 'fwa':
-        //                 base = this.resources.items.projectsDistinctionsFWABase.scene
-        //                 collision = this.resources.items.projectsDistinctionsFWACollision.scene
-        //                 shadowSizeX = 2
-        //                 shadowSizeY = 1
-        //                 break
-
-        //             case 'cssda':
-        //                 base = this.resources.items.projectsDistinctionsCSSDABase.scene
-        //                 collision = this.resources.items.projectsDistinctionsCSSDACollision.scene
-        //                 shadowSizeX = 1.2
-        //                 shadowSizeY = 1.2
-        //                 break
-        //         }
-
-        //         this.objects.add({
-        //             base: base,
-        //             collision: collision,
-        //             offset: new THREE.Vector3(this.x + this.floor.x + _distinction.x, this.y + this.floor.y + _distinction.y, 0),
-        //             rotation: new THREE.Euler(0, 0, 0),
-        //             duplicated: true,
-        //             shadow: { sizeX: shadowSizeX, sizeY: shadowSizeY, offsetZ: - 0.1, alpha: 0.5 },
-        //             mass: 1.5,
-        //             soundName: 'woodHit'
-        //         })
-        //     }
-        // }
-
-        // Area
-        // console.log(this.link);
-        // console.log(this.floor);
-        // console.log(this.areas);
-
         for(let i = 0; i < this.link.length; i++){ 
             const link = this.link[i];
             this.floor.area = this.areas.add({
@@ -276,39 +224,8 @@ export default class Project
                 window.open(link.href, '_blank')
             })
         }
-        // this.link.forEach(openLink(this.floor));
-
-        // function openLink(link, floor){
-        //     console.log(floor);
-            // floor.area = areas.add({
-            //     position: new THREE.Vector2(this.x + link.x, this.y + floor.y + link.y),
-            //     halfExtents: new THREE.Vector2(link.halfExtents.x, link.halfExtents.y)
-            // })
-            // floor.area.on('interact', () =>
-            // {
-            //     window.open(link.href, '_blank')
-            // })
-        // }
-        // if(this.link.length == 1){
-
-        // }
-        // for(const _link of this.links){
-        //     console.log(_link);
-            // this.floor.area = this.areas.add({
-            //     position: new THREE.Vector2(this.x + _link.x, this.y + this.floor.y + _link.y),
-            //     halfExtents: new THREE.Vector2(_link.halfExtents.x, _link.halfExtents.y)
-            // })
-            // this.floor.area.on('interact', () =>
-            // {
-            //     window.open(_link.href, '_blank')
-            // })
-        // }
-        
-
-        // Area label
+  
         this.floor.areaLabel = this.meshes.areaLabel.clone()
-        // this.floor.areaLabel.position.x = this.link.x
-        // this.floor.areaLabel.position.y = this.link.y
         this.floor.areaLabel.position.z = 0.001
         this.floor.areaLabel.matrixAutoUpdate = false
         this.floor.areaLabel.updateMatrix()
