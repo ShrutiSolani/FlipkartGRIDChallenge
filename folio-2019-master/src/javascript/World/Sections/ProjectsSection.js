@@ -5,44 +5,13 @@ import TweenLite from 'gsap/TweenLite'
 import projectsThreejsJourneySlideASources from '../../../models/projects/Necklace1/neck.png'
 import projectsThreejsJourneySlideBSources from '../../../models/projects/Necklace1/neck1.png'
 import projectsThreejsJourneySlideCSources from '../../../models/projects/Necklace1/neck3.png'
-// import projectsThreejsJourneySlideDSources from '../../../models/projects/threejsJourney/slideD.jpg'
 
 import projectsMadboxSlideASources from '../../../models/projects/Dress7/1.png'
 import projectsMadboxSlideBSources from '../../../models/projects/Dress7/3.png'
 import projectsMadboxSlideCSources from '../../../models/projects/Dress7/dress.png'
 
 import projectsScoutSlideBSources from '../../../models/projects/Dress7/6.png'
-import projectsScoutSlideCSources from '../../../models/projects/Dress7/poloshirt.png'
 import projectsScoutSlideASources from '../../../models/projects/Dress7/shirt.png'
-
-import projectsChartogneSlideASources from '../../../models/projects/electronics/mobile.png'
-import projectsChartogneSlideBSources from '../../../models/projects/electronics/laptop.png'
-import projectsChartogneSlideCSources from '../../../models/projects/electronics/headphones.png'
-
-// import projectsZenlySlideASources from '../../../models/projects/zenly/slideA.jpg'
-// import projectsZenlySlideBSources from '../../../models/projects/zenly/slideB.jpg'
-// import projectsZenlySlideCSources from '../../../models/projects/zenly/slideC.jpg'
-
-// import projectsCitrixRedbullSlideASources from '../../../models/projects/citrixRedbull/slideA.jpg'
-// import projectsCitrixRedbullSlideBSources from '../../../models/projects/citrixRedbull/slideB.jpg'
-// import projectsCitrixRedbullSlideCSources from '../../../models/projects/citrixRedbull/slideC.jpg'
-
-// import projectsPriorHoldingsSlideASources from '../../../models/projects/priorHoldings/slideA.jpg'
-// import projectsPriorHoldingsSlideBSources from '../../../models/projects/priorHoldings/slideB.jpg'
-// import projectsPriorHoldingsSlideCSources from '../../../models/projects/priorHoldings/slideC.jpg'
-
-// import projectsOranoSlideASources from '../../../models/projects/orano/slideA.jpg'
-// import projectsOranoSlideBSources from '../../../models/projects/orano/slideB.jpg'
-// import projectsOranoSlideCSources from '../../../models/projects/orano/slideC.jpg'
-
-// import projectsGleecChatSlideASources from '../../../models/projects/gleecChat/slideA.jpg'
-// import projectsGleecChatSlideBSources from '../../../models/projects/gleecChat/slideB.jpg'
-// import projectsGleecChatSlideCSources from '../../../models/projects/gleecChat/slideC.jpg'
-// import projectsGleecChatSlideDSources from '../../../models/projects/gleecChat/slideD.jpg'
-
-// import projectsKepplerSlideASources from '../../../models/projects/keppler/slideA.jpg'
-// import projectsKepplerSlideBSources from '../../../models/projects/keppler/slideB.jpg'
-// import projectsKepplerSlideCSources from '../../../models/projects/keppler/slideC.jpg'
 
 export default class ProjectsSection
 {
@@ -90,10 +59,6 @@ export default class ProjectsSection
         {
             this.add(_options)
         }
-        // for(const _options of this.list2)
-        // {
-        //     this.add1(_options)
-        // }
     }
 
     setGeometries()
@@ -105,10 +70,6 @@ export default class ProjectsSection
     setMeshes()
     {
         this.meshes = {}
-
-        // this.meshes.boardStructure = this.objects.getConvertedMesh(this.resources.items.projectsBoardStructure.scene.children, { floorShadowTexture: this.resources.items.projectsBoardStructureFloorShadowTexture })
-        // this.resources.items.areaOpenTexture.magFilter = THREE.NearestFilter
-        // this.resources.items.areaOpenTexture.minFilter = THREE.LinearFilter
         this.meshes.boardPlane = this.resources.items.projectsBoardPlane.scene.children[0]
         this.meshes.areaLabel = new THREE.Mesh(new THREE.PlaneBufferGeometry(2, 0.5), new THREE.MeshBasicMaterial({ transparent: true, depthWrite: false, color: 0xffffff, alphaMap: this.resources.items.areaOpenTexture }))
         this.meshes.areaLabel.matrixAutoUpdate = false
@@ -197,7 +158,6 @@ export default class ProjectsSection
                 [
                     projectsScoutSlideASources,
                     projectsScoutSlideBSources,
-                    // projectsScoutSlideCSources
                 ],
                 floorTexture: this.resources.items.projectsScoutFloorTexture,
                 link:
@@ -227,237 +187,10 @@ export default class ProjectsSection
                 [
                 ]
             },
-            // s
-            // {
-            //     name: 'Zenly',
-            //     imageSources:
-            //     [
-            //         projectsZenlySlideASources,
-            //         projectsZenlySlideBSources,
-            //         projectsZenlySlideCSources
-            //     ],
-            //     floorTexture: this.resources.items.projectsZenlyFloorTexture,
-            //     link:
-            //     {
-            //         href: 'https://zen.ly',
-            //         x: - 4.8,
-            //         y: - 4.2,
-            //         halfExtents:
-            //         {
-            //             x: 3.2,
-            //             y: 1.5
-            //         }
-            //     },
-            //     distinctions:
-            //     [
-            //         { type: 'awwwards', x: 3.95, y: 4.15 },
-            //         { type: 'fwa', x: 5.6, y: 4.15 },
-            //         { type: 'cssda', x: 7.2, y: 4.15 }
-            //     ]
-            // },
-            // {
-            //     name: 'priorHoldings',
-            //     imageSources:
-            //     [
-            //         projectsPriorHoldingsSlideASources,
-            //         projectsPriorHoldingsSlideBSources,
-            //         projectsPriorHoldingsSlideCSources
-            //     ],
-            //     floorTexture: this.resources.items.projectsPriorHoldingsFloorTexture,
-            //     link:
-            //     {
-            //         href: 'https://prior.co.jp/discover/',
-            //         x: - 4.8,
-            //         y: - 3,
-            //         halfExtents:
-            //         {
-            //             x: 3.2,
-            //             y: 1.5
-            //         }
-            //     },
-            //     distinctions:
-            //     [
-            //         { type: 'awwwards', x: 3.95, y: 4.15 },
-            //         { type: 'fwa', x: 5.6, y: 4.15 },
-            //         { type: 'cssda', x: 7.2, y: 4.15 }
-            //     ]
-            // },
-            // {
-            //     name: 'orano',
-            //     imageSources:
-            //     [
-            //         projectsOranoSlideASources,
-            //         projectsOranoSlideBSources,
-            //         projectsOranoSlideCSources
-            //     ],
-            //     floorTexture: this.resources.items.projectsOranoFloorTexture,
-            //     link:
-            //     {
-            //         href: 'https://www.orano.group/experience/innovation/',
-            //         x: - 4.8,
-            //         y: - 3.4,
-            //         halfExtents:
-            //         {
-            //             x: 3.2,
-            //             y: 1.5
-            //         }
-            //     },
-            //     distinctions:
-            //     [
-            //         { type: 'awwwards', x: 3.95, y: 4.15 },
-            //         { type: 'fwa', x: 5.6, y: 4.15 },
-            //         { type: 'cssda', x: 7.2, y: 4.15 }
-            //     ]
-            // },
-            // {
-            //     name: 'citrixRedbull',
-            //     imageSources:
-            //     [
-            //         projectsCitrixRedbullSlideASources,
-            //         projectsCitrixRedbullSlideBSources,
-            //         projectsCitrixRedbullSlideCSources
-            //     ],
-            //     floorTexture: this.resources.items.projectsCitrixRedbullFloorTexture,
-            //     link:
-            //     {
-            //         href: 'https://thenewmobileworkforce.imm-g-prod.com/',
-            //         x: - 4.8,
-            //         y: - 4.4,
-            //         halfExtents:
-            //         {
-            //             x: 3.2,
-            //             y: 1.5
-            //         }
-            //     },
-            //     distinctions:
-            //     [
-            //         { type: 'awwwards', x: 3.95, y: 4.15 },
-            //         { type: 'fwa', x: 5.6, y: 4.15 },
-            //         { type: 'cssda', x: 7.2, y: 4.15 }
-            //     ]
-            // },
-            // {
-            //     name: 'gleecChat',
-            //     imageSources:
-            //     [
-            //         projectsGleecChatSlideASources,
-            //         projectsGleecChatSlideBSources,
-            //         projectsGleecChatSlideCSources,
-            //         projectsGleecChatSlideDSources
-            //     ],
-            //     floorTexture: this.resources.items.projectsGleecChatFloorTexture,
-            //     link:
-            //     {
-            //         href: 'http://gleec.imm-g-prod.com',
-            //         x: - 4.8,
-            //         y: - 3.4,
-            //         halfExtents:
-            //         {
-            //             x: 3.2,
-            //             y: 1.5
-            //         }
-            //     },
-            //     distinctions:
-            //     [
-            //         { type: 'awwwards', x: 3.95, y: 4.15 },
-            //         { type: 'fwa', x: 5.6, y: 4.15 },
-            //         { type: 'cssda', x: 7.2, y: 4.15 }
-            //     ]
-            // },
-            // {
-            //     name: 'keppler',
-            //     imageSources:
-            //     [
-            //         projectsKepplerSlideASources,
-            //         projectsKepplerSlideBSources,
-            //         projectsKepplerSlideCSources
-            //     ],
-            //     floorTexture: this.resources.items.projectsKepplerFloorTexture,
-            //     link:
-            //     {
-            //         href: 'https://brunosimon.github.io/keppler/',
-            //         x: 2.75,
-            //         y: - 1.1,
-            //         halfExtents:
-            //         {
-            //             x: 3.2,
-            //             y: 1.5
-            //         }
-            //     },
-            //     distinctions: []
-            // }
+    
         ]
     }
-    // setList2()
-    // {
-    //     this.list2 = [
-    //         {
-    //             name: 'Three.js Journey',
-    //             imageSources:
-    //             [
-    //                 projectsThreejsJourneySlideASources,
-    //                 projectsThreejsJourneySlideBSources,
-    //                 projectsThreejsJourneySlideCSources,
-    //             ],
-    //             floorTexture: this.resources.items.projectsThreejsJourneyFloorTexture,
-    //             link:
-    //             {
-    //                 href: 'http://127.0.0.1:5000/accessories',
-    //                 x: - 4.8,
-    //                 y: 12,
-    //                 halfExtents:
-    //                 {
-    //                     x: 3.2,
-    //                     y: 1.5
-    //                 }
-    //             },
-                
-    //         },
-    //         {
-    //             name: 'Madbox',
-    //             imageSources:
-    //             [
-    //                 projectsMadboxSlideASources,
-    //                 projectsMadboxSlideBSources,
-    //                 projectsMadboxSlideCSources
-    //             ],
-    //             floorTexture: this.resources.items.projectsMadboxFloorTexture,
-    //             link:
-    //             {
-    //                 href: 'http://127.0.0.1:5000/accessories',
-    //                 x: - 4.8,
-    //                 y: 12,
-    //                 halfExtents:
-    //                 {
-    //                     x: 3.2,
-    //                     y: 1.5
-    //                 }
-    //             },
-    //         },
-    //         {
-    //             name: 'Scout',
-    //             imageSources:
-    //             [
-    //                 projectsScoutSlideASources,
-    //                 projectsScoutSlideBSources,
-    //                 projectsScoutSlideCSources
-    //             ],
-    //             floorTexture: this.resources.items.projectsScoutFloorTexture,
-    //             link:
-    //             {
-    //                 href: 'http://127.0.0.1:5000/accessories',
-    //                 x: - 4.8,
-    //                 y: 12,
-    //                 halfExtents:
-    //                 {
-    //                     x: 3.2,
-    //                     y: 1.5
-    //                 }
-    //             }
-    //         }
-    //     ]
-    // }
-
+ 
     setZone()
     {
         const totalWidth = this.list.length * (this.interDistance / 2)
@@ -507,21 +240,6 @@ export default class ProjectsSection
         })
 
         this.container.add(project.container)
-
-        // Add tiles
-        if(this.items.length >= 1)
-        {
-            const previousProject = this.items[this.items.length - 1]
-            const start = new THREE.Vector2(previousProject.x + this.projectHalfWidth, previousProject.y)
-            const end = new THREE.Vector2(project.x - this.projectHalfWidth, project.y)
-            const delta = end.clone().sub(start)
-            // this.tiles.add({
-            //     start: start,
-            //     delta: delta
-            // })
-        }
-
-        // Save
         this.items.push(project)
     }
 }

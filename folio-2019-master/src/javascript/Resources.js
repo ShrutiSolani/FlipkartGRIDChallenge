@@ -429,27 +429,6 @@ export default class Resources extends EventEmitter {
                 name: "informationBaguetteCollision",
                 source: informationBaguetteCollisionSource,
             },
-
-            // {
-            //     name: "informationContactTwitterLabel",
-            //     source: informationContactTwitterLabelSource,
-            //     type: "texture",
-            // },
-            // {
-            //     name: "informationContactGithubLabel",
-            //     source: informationContactGithubLabelSource,
-            //     type: "texture",
-            // },
-            // {
-            //     name: "informationContactLinkedinLabel",
-            //     source: informationContactLinkedinLabelSource,
-            //     type: "texture",
-            // },
-            // {
-            //     name: "informationContactMailLabel",
-            //     source: informationContactMailLabelSource,
-            //     type: "texture",
-            // },
             {
                 name: "fridgeLabel",
                 source: fridgeSource,
@@ -485,112 +464,6 @@ export default class Resources extends EventEmitter {
                 source: informationActivitiesSource,
                 type: "texture",
             },
-
-            // {
-            //     name: "FridgeLabel",
-            //     source: informationFridgeSource,
-            //     type: "texture",
-            // },
-
-            // Playground
-            // {
-            //     name: "playgroundStaticBase",
-            //     source: playgroundStaticBaseSource,
-            // },
-            // {
-            //     name: "playgroundStaticCollision",
-            //     source: playgroundStaticCollisionSource,
-            // },
-            // {
-            //     name: "playgroundStaticFloorShadow",
-            //     source: playgroundStaticFloorShadowSource,
-            //     type: "texture",
-            // },
-
-            // Brick
-            // { name: "brickBase", source: brickBaseSource },
-            // { name: "brickCollision", source: brickCollisionSource },
-
-            // Horn
-            // { name: "hornBase", source: hornBaseSource },
-            // { name: "hornCollision", source: hornCollisionSource },
-
-            // // Distinction A
-            // { name: 'distinctionAStaticBase', source: distinctionAStaticBaseSource },
-            // { name: 'distinctionAStaticCollision', source: distinctionAStaticCollisionSource },
-            // { name: 'distinctionAStaticFloorShadow', source: distinctionAStaticFloorShadowSource, type: 'texture' },
-
-            // // Distinction B
-            // { name: 'distinctionBStaticBase', source: distinctionBStaticBaseSource },
-            // { name: 'distinctionBStaticCollision', source: distinctionBStaticCollisionSource },
-            // { name: 'distinctionBStaticFloorShadow', source: distinctionBStaticFloorShadowSource, type: 'texture' },
-
-            // // Distinction C
-            // { name: 'distinctionCStaticBase', source: distinctionCStaticBaseSource },
-            // { name: 'distinctionCStaticCollision', source: distinctionCStaticCollisionSource },
-            // { name: 'distinctionCStaticFloorShadow', source: distinctionCStaticFloorShadowSource, type: 'texture' },
-
-            // // Cone
-            // { name: 'coneBase', source: coneBaseSource },
-            // { name: 'coneCollision', source: coneCollisionSource },
-
-            // // Awwwards trophy
-            // { name: 'awwwardsTrophyBase', source: awwwardsTrophyBaseSource },
-            // { name: 'awwwardsTrophyCollision', source: awwwardsTrophyCollisionSource },
-
-            // Webby trophy
-            // { name: "webbyTrophyBase", source: webbyTrophyBaseSource },
-            // {
-            //     name: "webbyTrophyCollision",
-            //     source: webbyTrophyCollisionSource,
-            // },
-
-            // Lemon
-            // { name: "lemonBase", source: lemonBaseSource },
-            // { name: "lemonCollision", source: lemonCollisionSource },
-
-            // Bownling ball
-            // { name: "bowlingBallBase", source: bowlingBallBaseSource },
-            // {
-            //     name: "bowlingBallCollision",
-            //     source: bowlingBallCollisionSource,
-            // },
-
-            // Bownling ball
-            // { name: "bowlingPinBase", source: bowlingPinBaseSource },
-            // { name: "bowlingPinCollision", source: bowlingPinCollisionSource },
-
-            // Areas
-            // {
-            //     name: "areaKeyEnter",
-            //     source: areaKeyEnterSource,
-            //     type: "texture",
-            // },
-            // { name: "areaEnter", source: areaEnterSource, type: "texture" },
-            // { name: "areaOpen", source: areaOpenSource, type: "texture" },
-            // { name: "areaReset", source: areaResetSource, type: "texture" },
-            // {
-            //     name: "areaQuestionMark",
-            //     source: areaQuestionMarkSource,
-            //     type: "texture",
-            // },
-
-            // Tiles
-            // { name: "tilesABase", source: tilesABaseSource },
-            // { name: "tilesACollision", source: tilesACollisionSource },
-
-            // { name: "tilesBBase", source: tilesBBaseSource },
-            // { name: "tilesBCollision", source: tilesBCollisionSource },
-
-            // { name: "tilesCBase", source: tilesCBaseSource },
-            // { name: "tilesCCollision", source: tilesCCollisionSource },
-
-            // { name: "tilesDBase", source: tilesDBaseSource },
-            // { name: "tilesDCollision", source: tilesDCollisionSource },
-
-            // { name: "tilesEBase", source: tilesEBaseSource },
-            // { name: "tilesECollision", source: tilesECollisionSource },
-
             // Konami
             { name: "konamiLabel", source: konamiLabelSource, type: "texture" },
             {
@@ -604,10 +477,6 @@ export default class Resources extends EventEmitter {
             { name: "wig2", source: wig2Source },
             { name: "wig3", source: wig3Source },
             { name: "wig4", source: wig4Source },
-
-            // // Egg
-            // { name: 'eggBase', source: eggBaseSource },
-            // { name: 'eggCollision', source: eggCollisionSource },
         ]);
 
         this.loader.on("fileEnd", (_resource, _data) => {
