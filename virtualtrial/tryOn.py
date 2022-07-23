@@ -4,9 +4,6 @@ from PIL import Image
 from PIL import ImageTk
 import cv2, threading, os, time
 from threading import Thread
-# from os import listdir
-# from os.path import isfile, join
-from dotmap import DotMap
 
 import dlib
 from imutils import face_utils, rotate_bound
@@ -20,11 +17,6 @@ def put_sprite(num):
         num = len(SPRITES) - 1
 
     SPRITES[num] = (1 - SPRITES[num])
-
-    # if SPRITES[num]:
-    #     BTNS[num].config(relief=SUNKEN)
-    # else:
-    #     BTNS[num].config(relief=RAISED)
 
 
 def draw_sprite(frame, sprite, x_offset, y_offset):
@@ -122,7 +114,6 @@ image_path = ''
 def add_sprite(img):
     global image_path
     image_path = img
-    # print(img.rsplit('/',1))
     put_sprite(int(img.rsplit('/', 1)[0][-1]))
 
 
@@ -133,14 +124,12 @@ def cvloop(run_event):
     global image_path
     i = 0
     video_capture = cv2.VideoCapture(0)  # read from webcam
-    # (x, y, w, h) = (0, 0, 10, 10)  # whatever initial values
 
     # Filters path
     detector = dlib.get_frontal_face_detector()
 
     model = "data/shape_predictor_68_face_landmarks.dat"
-    predictor = dlib.shape_predictor(model)  # link to model: http://dlib.net/files/shape_predictor_68_face_landmarks.dat.bz2
-
+    predictor = dlib.shape_predictor(model)  
     while run_event.is_set():
         ret, image = video_capture.read()
         gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
@@ -156,19 +145,13 @@ def cvloop(run_event):
             # condition to see if mouth is open
             is_mouth_open = (shape[66][1] - shape[62][1]) >= 10  # y coordiantes of landmark points of lips
 
-            if SPRITES[0]:
-                print("sprite 0")
-                apply_sprite(image, image_path, w, x, y + 40, incl, ontop=True)
-
             # Necklace - working
             if SPRITES[1]:
-                print("sprite 1")
                 (x1, y1, w1, h1) = get_face_boundbox(shape, 6)
                 apply_sprite(image, image_path, w1, x1, y1 + 275, incl)
 
             # Earrings - working
             if SPRITES[2]:
-                print("sprite 2")
                 (x3, y3, w3, h3) = get_face_boundbox(shape, 7)  # nose
                 apply_sprite(image, image_path, w3, x3 - 20, y3 + 25, incl)
                 (x3, y3, w3, h3) = get_face_boundbox(shape, 8)  # nose
@@ -176,33 +159,12 @@ def cvloop(run_event):
 
             # Tiaras - working
             if SPRITES[3]:
-                print("sprite 3")
                 (x3, y3, _, h3) = get_face_boundbox(shape, 1)
                 apply_sprite(image, image_path, w, x, y3, incl, ontop=False)
 
             (x0, y0, w0, h0) = get_face_boundbox(shape, 6)  # bound box of mouth
 
-            # Tops and Frocks - partially working
-            if SPRITES[4] or SPRITES[5]:
-                print("sprite 4")
-                findRects = []
-                upperPath = "data/haarcascade_upperbody.xml"
-                imageGray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
-                upperCascade = cv2.CascadeClassifier(upperPath)
-                upperRect = upperCascade.detectMultiScale(imageGray, scaleFactor=1.1, minNeighbors=1, minSize=(1, 1))
-
-                if len(upperRect) > 0:
-                    findRects.append(upperRect[0])
-                    # print(findRects)
-
-                # print(len(findRects))
-                for obj in findRects:
-                    angle = 0
-                    sprite = cv2.imread(image_path, -1)
-                    sprite = rotate_bound(sprite, angle)
-                    (sprite, y_final) = adjust_sprite2head(sprite, w, y, ontop=True)
-                    img = cv2.rectangle(image, (obj[0], obj[1]), (obj[0]+obj[2], obj[1]+obj[3]), (0, 255, 0), 2)
-                    draw_sprite(img, sprite, obj[0], obj[1])
+         
 
         image = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
         image = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)

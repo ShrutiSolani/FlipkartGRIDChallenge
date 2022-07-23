@@ -19,7 +19,6 @@ export default class CrossroadsSection
         this.container.matrixAutoUpdate = false
 
         this.setStatic()
-        // this.setTiles()
     }
 
     setStatic()
@@ -30,27 +29,6 @@ export default class CrossroadsSection
             floorShadowTexture: this.resources.items.crossroadsStaticFloorShadowTexture,
             offset: new THREE.Vector3(this.x, this.y , 0),
             mass: 0
-        })
-    }
-
-    setTiles()
-    {
-        // To intro
-        this.tiles.add({
-            start: new THREE.Vector2(this.x, - 10),
-            delta: new THREE.Vector2(0, this.y + 14)
-        })
-
-        // To projects
-        this.tiles.add({
-            start: new THREE.Vector2(this.x + 12.5, this.y),
-            delta: new THREE.Vector2(7.5, 0)
-        })
-
-        // To projects
-        this.tiles.add({
-            start: new THREE.Vector2(this.x - 13, this.y),
-            delta: new THREE.Vector2(- 6, 0)
         })
     }
 }
