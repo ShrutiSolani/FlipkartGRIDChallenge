@@ -7,19 +7,28 @@ const Tv = () => {
   const viewerIframeRef = useRef(null);
 
   const ViewerIframe = (
-    <iframe
-      // We feed the ref to the iframe component to get the underlying DOM object
-      ref={viewerIframeRef}
-      title="sketchfab-viewer"
+    <div
       style={{
-        height: "100vh",
-        width: 1200,
-        flex: "center",
         display: "flex",
-        justifyContent: "center",
         alignItems: "center",
+        justifyContent: "center",
+        height: "100vh",
       }}
-    />
+    >
+      <iframe
+        // We feed the ref to the iframe component to get the underlying DOM object
+        ref={viewerIframeRef}
+        title="sketchfab-viewer"
+        style={{
+          height: "100vh",
+          width: 1500,
+          flex: "center",
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+        }}
+      />
+    </div>
   );
 
   useEffect(
