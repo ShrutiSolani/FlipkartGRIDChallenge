@@ -13,6 +13,8 @@ import Women2 from "./pages/Women2";
 import Men1 from "./pages/Men1";
 import Men2 from "./pages/Men2";
 import Women3 from "./pages/Women3";
+import Dumbel from "./pages/Dumbel";
+import Treadmill from "./pages/Treadmill";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 function App() {
@@ -32,6 +34,8 @@ function App() {
         <Route exact path="/men1" element={<Men1 />} />
         <Route exact path="/men2" element={<Men2 />} />
         <Route exact path="/women3" element={<Women3 />} />
+        <Route exact path="/dumbel" element={<Dumbel />} />
+        <Route exact path="/treadmill" element={<Treadmill />} />
       </Routes>
     </Router>
   );
