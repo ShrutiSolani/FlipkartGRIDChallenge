@@ -15,6 +15,13 @@ import Men2 from "./pages/Men2";
 import Women3 from "./pages/Women3";
 import Dumbel from "./pages/Dumbel";
 import Treadmill from "./pages/Treadmill";
+import Skill from "./pages/Skill";
+import Extension from "./pages/Extension";
+import Cycle from "./pages/Cycle";
+import Vball from "./pages/Vball";
+import Bball from "./pages/Bball";
+import Skateboard from "./pages/Skateboard";
+import Bench from "./pages/Bench";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 function App() {
@@ -36,6 +43,13 @@ function App() {
         <Route exact path="/women3" element={<Women3 />} />
         <Route exact path="/dumbel" element={<Dumbel />} />
         <Route exact path="/treadmill" element={<Treadmill />} />
+        <Route exact path="/skilltool" element={<Skill />} />
+        <Route exact path="/hyperextension" element={<Extension />} />
+        <Route exact path="/cycle" element={<Cycle />} />
+        <Route exact path="/vball" element={<Vball />} />
+        <Route exact path="/bball" element={<Bball />} />
+        <Route exact path="/skateboard" element={<Skateboard />} />
+        <Route exact path="/gymbench" element={<Bench />} />
       </Routes>
     </Router>
   );

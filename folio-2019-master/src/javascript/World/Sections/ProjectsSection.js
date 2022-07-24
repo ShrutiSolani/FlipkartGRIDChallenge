@@ -6,12 +6,15 @@ import projectsThreejsJourneySlideASources from "../../../models/projects/Neckla
 import projectsThreejsJourneySlideBSources from "../../../models/projects/Necklace1/neck1.png";
 import projectsThreejsJourneySlideCSources from "../../../models/projects/Necklace1/neck3.png";
 
-import projectsMadboxSlideASources from "../../../models/projects/Dress7/1.png";
-import projectsMadboxSlideBSources from "../../../models/projects/Dress7/3.png";
-import projectsMadboxSlideCSources from "../../../models/projects/Dress7/dress.png";
+import projectsMadboxSlideASources from "../../../models/projects/Dress7/women1.png";
+import projectsMadboxSlideBSources from "../../../models/projects/Dress7/women2.jpg";
+import projectsMadboxSlideCSources from "../../../models/projects/Dress7/women3.jpg";
+import projectsMadboxSlideDSources from "../../../models/projects/Dress7/khaki.jpg";
+import projectsMadboxSlideESources from "../../../models/projects/Dress7/sneakers.jpg";
+import projectsMadboxSlideFSources from "../../../models/projects/Dress7/sneakers.jpg";
 
-import projectsScoutSlideBSources from "../../../models/projects/Dress7/6.png";
-import projectsScoutSlideASources from "../../../models/projects/Dress7/shirt.png";
+import projectsScoutSlideBSources from "../../../models/projects/Dress7/hoodie.jpg";
+import projectsScoutSlideASources from "../../../models/projects/Dress7/jacket.jpg";
 
 export default class ProjectsSection {
     constructor(_options) {
@@ -147,8 +150,8 @@ export default class ProjectsSection {
             {
                 name: "Scout",
                 imageSources: [
-                    projectsScoutSlideASources,
                     projectsScoutSlideBSources,
+                    projectsScoutSlideASources,
                 ],
                 floorTexture: this.resources.items.projectsScoutFloorTexture,
                 link: [
