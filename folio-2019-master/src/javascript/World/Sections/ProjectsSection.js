@@ -2,19 +2,26 @@ import * as THREE from "three";
 import Project from "./Project";
 import TweenLite from "gsap/TweenLite";
 
-import projectsThreejsJourneySlideASources from "../../../models/projects/Necklace1/neck.png";
-import projectsThreejsJourneySlideBSources from "../../../models/projects/Necklace1/neck1.png";
-import projectsThreejsJourneySlideCSources from "../../../models/projects/Necklace1/neck3.png";
+import accessories1Source from "../../../models/projects/Necklace1/neck.png";
+import accessories2Source from "../../../models/projects/Necklace1/neck1.png";
+import accessories3Source from "../../../models/projects/Necklace1/neck3.png";
+import accessories4Source from "../../../models/projects/Earrings2/1.png";
+import accessories5Source from "../../../models/projects/Earrings2/2.png";
+import accessories6Source from "../../../models/projects/Earrings2/3.png";
 
-import projectsMadboxSlideASources from "../../../models/projects/Dress7/women1.png";
-import projectsMadboxSlideBSources from "../../../models/projects/Dress7/women2.jpg";
-import projectsMadboxSlideCSources from "../../../models/projects/Dress7/women3.jpg";
-import projectsMadboxSlideDSources from "../../../models/projects/Dress7/khaki.jpg";
-import projectsMadboxSlideESources from "../../../models/projects/Dress7/sneakers.jpg";
-import projectsMadboxSlideFSources from "../../../models/projects/Dress7/sneakers.jpg";
+import women1Source from "../../../models/projects/Dress7/women1.png";
+import women2Source from "../../../models/projects/Dress7/women2.jpg";
+import women3Source from "../../../models/projects/Dress7/women3.jpg";
+import women4Source from "../../../models/projects/Dress7/khaki.jpg";
+import women5Source from "../../../models/projects/Dress7/sneakers.jpg";
+import women6Source from "../../../models/projects/Dress7/sneakers.jpg";
 
-import projectsScoutSlideBSources from "../../../models/projects/Dress7/hoodie.jpg";
-import projectsScoutSlideASources from "../../../models/projects/Dress7/jacket.jpg";
+import men1Source from "../../../models/projects/Dress7/hoodie.jpg";
+import men2Source from "../../../models/projects/Dress7/jacket.jpg";
+import men3Source from "../../../models/projects/Dress7/sneakers.jpg";
+import men4Source from "../../../models/projects/Dress7/khakipant.jpg";
+import men5Source from "../../../models/projects/Dress7/khaki.jpg";
+import men6Source from "../../../models/projects/Dress7/poloshirt.png";
 
 export default class ProjectsSection {
     constructor(_options) {
@@ -86,9 +93,14 @@ export default class ProjectsSection {
             {
                 name: "Three.js Journey",
                 imageSources: [
-                    projectsThreejsJourneySlideASources,
-                    projectsThreejsJourneySlideBSources,
-                    projectsThreejsJourneySlideCSources,
+                    accessories1Source,
+                    accessories2Source,
+                    accessories3Source
+                ],
+                imageSourcesSecond: [
+                    accessories4Source,
+                    accessories5Source,
+                    accessories6Source
                 ],
                 floorTexture:
                     this.resources.items.projectsThreejsJourneyFloorTexture,
@@ -108,9 +120,14 @@ export default class ProjectsSection {
             {
                 name: "Madbox",
                 imageSources: [
-                    projectsMadboxSlideASources,
-                    projectsMadboxSlideBSources,
-                    projectsMadboxSlideCSources,
+                    women1Source,
+                    women2Source,
+                    women3Source
+                ],
+                imageSourcesSecond: [
+                    women4Source,
+                    women5Source,
+                    women6Source
                 ],
                 floorTexture: this.resources.items.projectsMadboxFloorTexture,
                 link: [
@@ -150,8 +167,14 @@ export default class ProjectsSection {
             {
                 name: "Scout",
                 imageSources: [
-                    projectsScoutSlideBSources,
-                    projectsScoutSlideASources,
+                    men1Source,
+                    men2Source,
+                    men3Source
+                ],
+                imageSourcesSecond: [
+                    men4Source,
+                    men5Source,
+                    men6Source
                 ],
                 floorTexture: this.resources.items.projectsScoutFloorTexture,
                 link: [
@@ -177,6 +200,8 @@ export default class ProjectsSection {
                 distinctions: [],
             },
         ];
+
+
     }
 
     setZone() {

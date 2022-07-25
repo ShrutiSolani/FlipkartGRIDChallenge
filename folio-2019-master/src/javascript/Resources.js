@@ -107,6 +107,18 @@ import laptopSource from "../models/information/static/laptop.png";
 import smartphoneSource from "../models/information/static/phone.png";
 import washingmachineSource from "../models/information/static/wm.png";
 
+import dumbelSource from "../models/fitness/static/dumbel.png";
+import basketBallSource from "../models/fitness/static/bball.png";
+import benchSource from "../models/fitness/static/bench.png";
+import cycleSource from "../models/fitness/static/cycle.png";
+import hyperExtensionSource from "../models/fitness/static/hyper.png";
+import skateboardSource from "../models/fitness/static/skateboard.png";
+import skillToolsSource from "../models/fitness/static/skilltools.png";
+import treadmillSource from "../models/fitness/static/treadmill.png";
+import volleyBallSource from "../models/fitness/static/vball.png";
+import weightsSource from "../models/fitness/static/weights.png";
+
+
 import informationActivitiesSource from "../models/information/static/activities.png";
 
 // Playground
@@ -462,6 +474,56 @@ export default class Resources extends EventEmitter {
             {
                 name: "informationActivities",
                 source: informationActivitiesSource,
+                type: "texture",
+            },
+            {
+                name: "dumbelLabel",
+                source: dumbelSource,
+                type: "texture"
+            },
+            {
+                name: "basketBallLabel",
+                source: basketBallSource,
+                type: "texture",
+            },
+            {
+                name: "benchLabel",
+                source: benchSource,
+                type: "texture",
+            },
+            {
+                name: "cycleLabel",
+                source: cycleSource,
+                type: "texture",
+            },
+            {
+                name: "hyperExtensionLabel",
+                source: hyperExtensionSource,
+                type: "texture",
+            },
+            {
+                name: "skateboardLabel",
+                source: skateboardSource,
+                type: "texture",
+            },
+            {
+                name: "skillToolsLabel",
+                source: skillToolsSource,
+                type: "texture",
+            },
+            {
+                name: "treadmillLabel",
+                source: treadmillSource,
+                type: "texture",
+            },
+            {
+                name: "volleyBallLabel",
+                source: volleyBallSource,
+                type: "texture",
+            },
+            {
+                name: "weightsLabel",
+                source: weightsSource,
                 type: "texture",
             },
             // Konami

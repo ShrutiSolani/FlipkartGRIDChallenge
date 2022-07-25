@@ -21,6 +21,7 @@ export default class Project
         this.x = _options.x
         this.y = _options.y
         this.imageSources = _options.imageSources
+        this.imageSourcesSecond = _options.imageSourcesSecond
         this.floorTexture = _options.floorTexture
         this.link = _options.link
         this.distinctions = _options.distinctions
@@ -130,7 +131,7 @@ export default class Project
         // Create each board
         let i = 0
 
-        for(const _imageSource of this.imageSources)
+        for(const _imageSource of this.imageSourcesSecond)
         {
             // Set up
             const board = {}
