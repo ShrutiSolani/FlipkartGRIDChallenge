@@ -1,0 +1,7 @@
+cmake
+dlib
+gunicorn
+mysql-connector
+opencv-contrib-python
+opencv-python
+scipy
