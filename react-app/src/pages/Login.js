@@ -22,7 +22,7 @@ export default function (props) {
                 </span>
               </div>
               <div className="form-group mt-3">
-                <label>Email address</label>
+                <label>Email/Mobile Number</label>
                 <input
                   type="email"
                   className="form-control mt-1"
@@ -78,19 +78,11 @@ export default function (props) {
               />
             </div>
             <div className="form-group mt-3">
-              <label>Mobile Number</label>
+              <label>Email/Mobile Number</label>
               <input
                 type="text"
                 className="form-control mt-1"
-                placeholder="Mobile Number"
-              />
-            </div>
-            <div className="form-group mt-3">
-              <label>Email address</label>
-              <input
-                type="email"
-                className="form-control mt-1"
-                placeholder="Email Address"
+                placeholder="Email/Mobile Number"
               />
             </div>
             <div className="form-group mt-3">
@@ -100,6 +92,30 @@ export default function (props) {
                 className="form-control mt-1"
                 placeholder="Password"
               />
+            </div>
+            <div className="form-group mt-3">
+              <label>City</label>
+              <input
+                type="text"
+                className="form-control mt-1"
+                placeholder="City"
+              />
+            </div>
+            <div className="form-group mt-3">
+              <label>State</label>
+              <input
+                type="text"
+                className="form-control mt-1"
+                placeholder="State"
+              />
+            </div>
+            <div className="form-group mt-3">
+              <label>Select Gender</label>
+              <select class="form-select" aria-label="Default select example">
+                <option selected>Gender</option>
+                <option value="1">Male</option>
+                <option value="2">Female</option>
+              </select>
             </div>
             <div className="form-group mt-3">
               <label>Avatar Image</label>
