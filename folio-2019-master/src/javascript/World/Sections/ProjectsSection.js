@@ -14,13 +14,13 @@ import women2Source from "../../../models/projects/Dress7/women2.jpg";
 import women3Source from "../../../models/projects/Dress7/women3.jpg";
 import women4Source from "../../../models/projects/Dress7/khaki.jpg";
 import women5Source from "../../../models/projects/Dress7/sneakers.jpg";
-import women6Source from "../../../models/projects/Dress7/sneakers.jpg";
+import women6Source from "../../../models/projects/Dress7/scarf.jpg";
 
 import men1Source from "../../../models/projects/Dress7/hoodie.jpg";
 import men2Source from "../../../models/projects/Dress7/jacket.jpg";
 import men3Source from "../../../models/projects/Dress7/sneakers.jpg";
 import men4Source from "../../../models/projects/Dress7/khakipant.jpg";
-import men5Source from "../../../models/projects/Dress7/khaki.jpg";
+import men5Source from "../../../models/projects/Dress7/shorts.jpg";
 import men6Source from "../../../models/projects/Dress7/poloshirt.png";
 
 export default class ProjectsSection {
@@ -95,12 +95,12 @@ export default class ProjectsSection {
                 imageSources: [
                     accessories1Source,
                     accessories2Source,
-                    accessories3Source
+                    accessories3Source,
                 ],
                 imageSourcesSecond: [
                     accessories4Source,
                     accessories5Source,
-                    accessories6Source
+                    accessories6Source,
                 ],
                 floorTexture:
                     this.resources.items.projectsThreejsJourneyFloorTexture,
@@ -119,16 +119,8 @@ export default class ProjectsSection {
             },
             {
                 name: "Madbox",
-                imageSources: [
-                    women1Source,
-                    women2Source,
-                    women3Source
-                ],
-                imageSourcesSecond: [
-                    women4Source,
-                    women5Source,
-                    women6Source
-                ],
+                imageSources: [women1Source, women2Source, women3Source],
+                imageSourcesSecond: [women4Source, women5Source, women6Source],
                 floorTexture: this.resources.items.projectsMadboxFloorTexture,
                 link: [
                     {
@@ -166,16 +158,8 @@ export default class ProjectsSection {
             },
             {
                 name: "Scout",
-                imageSources: [
-                    men1Source,
-                    men2Source,
-                    men3Source
-                ],
-                imageSourcesSecond: [
-                    men4Source,
-                    men5Source,
-                    men6Source
-                ],
+                imageSources: [men1Source, men2Source, men3Source],
+                imageSourcesSecond: [men5Source, men4Source, men6Source],
                 floorTexture: this.resources.items.projectsScoutFloorTexture,
                 link: [
                     {
@@ -200,8 +184,6 @@ export default class ProjectsSection {
                 distinctions: [],
             },
         ];
-
-
     }
 
     setZone() {
