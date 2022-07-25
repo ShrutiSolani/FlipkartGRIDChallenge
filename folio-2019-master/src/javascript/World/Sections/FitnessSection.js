@@ -23,15 +23,15 @@ export default class FitnessSection {
         this.setLinksRow4();
     }
 
-    setStatic()
-    {
+    setStatic() {
         this.objects.add({
             base: this.resources.items.fitnessStaticBase.scene,
             collision: this.resources.items.fitnessStaticCollision.scene,
-            floorShadowTexture: this.resources.items.fitnessStaticFloorShadowTexture,
-            offset: new THREE.Vector3(this.x - 30, this.y -10, 0),
-            mass: 0
-        })
+            floorShadowTexture:
+                this.resources.items.fitnessStaticFloorShadowTexture,
+            offset: new THREE.Vector3(this.x - 30, this.y - 10, 0),
+            mass: 0,
+        });
     }
 
     setLinksRow1() {
@@ -60,29 +60,24 @@ export default class FitnessSection {
         // Options
         this.links.options = [
             {
-                href: "http://localhost:3000/microwave",
-                labelTexture:
-                    this.resources.items.microwaveLabelTexture,
+                href: "http://localhost:3000/dumbel",
+                labelTexture: this.resources.items.microwaveLabelTexture,
             },
             {
-                href: "http://localhost:3000/microwave",
-                labelTexture:
-                    this.resources.items.microwaveLabelTexture,
+                href: "http://localhost:3000/dumbel",
+                labelTexture: this.resources.items.microwaveLabelTexture,
             },
             {
-                href: "http://localhost:3000/tv",
-                labelTexture:
-                    this.resources.items.televisionLabelTexture,
+                href: "http://localhost:3000/skilltool",
+                labelTexture: this.resources.items.televisionLabelTexture,
             },
             {
-                href: "http://localhost:3000/tv",
-                labelTexture:
-                    this.resources.items.televisionLabelTexture,
+                href: "http://localhost:3000/skilltool",
+                labelTexture: this.resources.items.televisionLabelTexture,
             },
             {
-                href: "http://localhost:3000/tv",
-                labelTexture:
-                    this.resources.items.televisionLabelTexture,
+                href: "http://localhost:3000/skilltool",
+                labelTexture: this.resources.items.televisionLabelTexture,
             },
         ];
 
@@ -164,29 +159,24 @@ export default class FitnessSection {
         // Options
         this.links.options = [
             {
-                href: "http://localhost:3000/fridge",
-                labelTexture:
-                    this.resources.items.fridgeLabelTexture,
+                href: "http://localhost:3000/hyperextension",
+                labelTexture: this.resources.items.fridgeLabelTexture,
             },
             {
-                href: "http://localhost:3000/fridge",
-                labelTexture:
-                    this.resources.items.fridgeLabelTexture,
+                href: "http://localhost:3000/hyperextension",
+                labelTexture: this.resources.items.fridgeLabelTexture,
             },
             {
-                href: "http://localhost:3000/wm",
-                labelTexture:
-                    this.resources.items.washingmachineLabelTexture,
+                href: "http://localhost:3000/cycle",
+                labelTexture: this.resources.items.washingmachineLabelTexture,
             },
             {
-                href: "http://localhost:3000/wm",
-                labelTexture:
-                    this.resources.items.washingmachineLabelTexture,
+                href: "http://localhost:3000/cycle",
+                labelTexture: this.resources.items.washingmachineLabelTexture,
             },
             {
-                href: "http://localhost:3000/wm",
-                labelTexture:
-                    this.resources.items.washingmachineLabelTexture,
+                href: "http://localhost:3000/cycle",
+                labelTexture: this.resources.items.washingmachineLabelTexture,
             },
         ];
 
@@ -241,7 +231,7 @@ export default class FitnessSection {
             i++;
         }
     }
-    
+
     setLinksRow3() {
         // Set up
         this.links = {};
@@ -268,29 +258,24 @@ export default class FitnessSection {
         // Options
         this.links.options = [
             {
-                href: "http://localhost:3000/tv",
-                labelTexture:
-                    this.resources.items.televisionLabelTexture,
+                href: "http://localhost:3000/vball",
+                labelTexture: this.resources.items.televisionLabelTexture,
             },
             {
-                href: "http://localhost:3000/tv",
-                labelTexture:
-                    this.resources.items.televisionLabelTexture,
+                href: "http://localhost:3000/bball",
+                labelTexture: this.resources.items.televisionLabelTexture,
             },
             {
-                href: "http://localhost:3000/laptop",
-                labelTexture:
-                    this.resources.items.laptopLabelTexture,
+                href: "http://localhost:3000/treadmill",
+                labelTexture: this.resources.items.laptopLabelTexture,
             },
             {
-                href: "http://localhost:3000/laptop",
-                labelTexture:
-                    this.resources.items.laptopLabelTexture,
+                href: "http://localhost:3000/treadmill",
+                labelTexture: this.resources.items.laptopLabelTexture,
             },
             {
-                href: "http://localhost:3000/laptop",
-                labelTexture:
-                    this.resources.items.laptopLabelTexture,
+                href: "http://localhost:3000/treadmill",
+                labelTexture: this.resources.items.laptopLabelTexture,
             },
         ];
 
@@ -372,29 +357,24 @@ export default class FitnessSection {
         // Options
         this.links.options = [
             {
-                href: "http://localhost:3000/mobile",
-                labelTexture:
-                    this.resources.items.smartphoneLabelTexture,
+                href: "http://localhost:3000/skateboard",
+                labelTexture: this.resources.items.smartphoneLabelTexture,
             },
             {
-                href: "http://localhost:3000/mobile",
-                labelTexture:
-                    this.resources.items.smartphoneLabelTexture,
+                href: "http://localhost:3000/skateboard",
+                labelTexture: this.resources.items.smartphoneLabelTexture,
             },
             {
-                href: "http://localhost:3000/mobile",
-                labelTexture:
-                    this.resources.items.smartphoneLabelTexture,
+                href: "http://localhost:3000/gymbench",
+                labelTexture: this.resources.items.smartphoneLabelTexture,
             },
             {
-                href: "http://localhost:3000/mobile",
-                labelTexture:
-                    this.resources.items.smartphoneLabelTexture,
+                href: "http://localhost:3000/gymbench",
+                labelTexture: this.resources.items.smartphoneLabelTexture,
             },
             {
-                href: "http://localhost:3000/mobile",
-                labelTexture:
-                    this.resources.items.smartphoneLabelTexture,
+                href: "http://localhost:3000/gymbench",
+                labelTexture: this.resources.items.smartphoneLabelTexture,
             },
         ];
 
