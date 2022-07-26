@@ -1,5 +1,6 @@
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
+import "./pages/login.css";
 import Login from "./pages/Login";
 import Hoodie_f from "./pages/Hoodie_f";
 import Mobile from "./pages/Mobile";

@@ -214,19 +214,26 @@ export default class Project
         this.floor.mesh.matrixAutoUpdate = false
         this.floor.container.add(this.floor.mesh)
 
+        
+
+        // Area
         for(let i = 0; i < this.link.length; i++){ 
             const link = this.link[i];
             this.floor.area = this.areas.add({
                 position: new THREE.Vector2(this.x + link.x, this.y + this.floor.y + link.y),
                 halfExtents: new THREE.Vector2(link.halfExtents.x, link.halfExtents.y)
             })
+            
             this.floor.area.on('interact', () =>
             {
                 window.open(link.href, '_blank')
             })
         }
-  
+
+        // Area label
         this.floor.areaLabel = this.meshes.areaLabel.clone()
+        // this.floor.areaLabel.position.x = this.link.x
+        // this.floor.areaLabel.position.y = this.link.y
         this.floor.areaLabel.position.z = 0.001
         this.floor.areaLabel.matrixAutoUpdate = false
         this.floor.areaLabel.updateMatrix()
