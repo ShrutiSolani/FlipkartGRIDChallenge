@@ -1,6 +1,9 @@
 import React, { useState } from "react";
+import { LoadingManager } from "three";
 import Header from "../components/navbar/Navbar";
-
+import "./login.css"
+import Container from 'react-bootstrap/Container';
+import { Row, Col } from "react-bootstrap";
 export default function (props) {
   let [authMode, setAuthMode] = useState("signin");
 
@@ -78,11 +81,11 @@ export default function (props) {
               />
             </div>
             <div className="form-group mt-3">
-              <label>Email/Mobile Number</label>
+              <label>Email</label>
               <input
                 type="text"
                 className="form-control mt-1"
-                placeholder="Email/Mobile Number"
+                placeholder="Email"
               />
             </div>
             <div className="form-group mt-3">
@@ -93,22 +96,31 @@ export default function (props) {
                 placeholder="Password"
               />
             </div>
-            <div className="form-group mt-3">
-              <label>City</label>
+            
+            <div style={{float:"left"}} className="form-group mt-3">
+            <Container fluid style={{ paddingLeft: 0, paddingRight: 0, paddingBottom: 15}}>
+
+              <Row>
+                <Col>
+                <label>City</label>
+              <input
+                type="text" 
+                className="form-control mt-2"
+                placeholder="City" 
+              />
+                </Col>
+                <Col>
+                <label>State</label>
               <input
                 type="text"
-                className="form-control mt-1"
-                placeholder="City"
+                className="form-control mt-2"
+                placeholder="State" 
               />
+              </Col>
+              </Row>
+            </Container>
             </div>
-            <div className="form-group mt-3">
-              <label>State</label>
-              <input
-                type="text"
-                className="form-control mt-1"
-                placeholder="State"
-              />
-            </div>
+            
             <div className="form-group mt-3">
               <label>Select Gender</label>
               <select class="form-select" aria-label="Default select example">
