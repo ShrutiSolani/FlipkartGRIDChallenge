@@ -1,29 +1,29 @@
 import * as THREE from "three";
-import Project from "./Project";
+import Fashion from "./Fashion";
 import TweenLite from "gsap/TweenLite";
 
-import accessories1Source from "../../../models/projects/Necklace1/neck.png";
-import accessories2Source from "../../../models/projects/Necklace1/neck1.png";
-import accessories3Source from "../../../models/projects/Necklace1/neck3.png";
-import accessories4Source from "../../../models/projects/Earrings2/1.png";
-import accessories5Source from "../../../models/projects/Earrings2/2.png";
-import accessories6Source from "../../../models/projects/Earrings2/3.png";
+import accessories1Source from "../../../models/fashion/Necklace1/neck.png";
+import accessories2Source from "../../../models/fashion/Necklace1/neck1.png";
+import accessories3Source from "../../../models/fashion/Necklace1/neck3.png";
+import accessories4Source from "../../../models/fashion/Earrings2/1.png";
+import accessories5Source from "../../../models/fashion/Earrings2/2.png";
+import accessories6Source from "../../../models/fashion/Earrings2/3.png";
 
-import women1Source from "../../../models/projects/Dress7/women1.png";
-import women2Source from "../../../models/projects/Dress7/women2.jpg";
-import women3Source from "../../../models/projects/Dress7/women3.jpg";
-import women4Source from "../../../models/projects/Dress7/khaki.jpg";
-import women5Source from "../../../models/projects/Dress7/sneakers.jpg";
-import women6Source from "../../../models/projects/Dress7/scarf.jpg";
+import women1Source from "../../../models/fashion/Dress7/women1.png";
+import women2Source from "../../../models/fashion/Dress7/women2.jpg";
+import women3Source from "../../../models/fashion/Dress7/women3.jpg";
+import women4Source from "../../../models/fashion/Dress7/khaki.jpg";
+import women5Source from "../../../models/fashion/Dress7/sneakers.jpg";
+import women6Source from "../../../models/fashion/Dress7/scarf.jpg";
 
-import men1Source from "../../../models/projects/Dress7/hoodie.jpg";
-import men2Source from "../../../models/projects/Dress7/jacket.jpg";
-import men3Source from "../../../models/projects/Dress7/sneakers.jpg";
-import men4Source from "../../../models/projects/Dress7/khakipant.jpg";
-import men5Source from "../../../models/projects/Dress7/shorts.jpg";
-import men6Source from "../../../models/projects/Dress7/poloshirt.png";
+import men1Source from "../../../models/fashion/Dress7/hoodie.jpg";
+import men2Source from "../../../models/fashion/Dress7/jacket.jpg";
+import men3Source from "../../../models/fashion/Dress7/sneakers.jpg";
+import men4Source from "../../../models/fashion/Dress7/khakipant.jpg";
+import men5Source from "../../../models/fashion/Dress7/shorts.jpg";
+import men6Source from "../../../models/fashion/Dress7/poloshirt.png";
 
-export default class ProjectsSection {
+export default class FashionSection {
     constructor(_options) {
         // Options
         this.time = _options.time;
@@ -40,7 +40,7 @@ export default class ProjectsSection {
 
         // Debug
         if (this.debug) {
-            this.debugFolder = this.debug.addFolder("projects");
+            this.debugFolder = this.debug.addFolder("fashion");
             this.debugFolder.open();
         }
 
@@ -75,7 +75,7 @@ export default class ProjectsSection {
     setMeshes() {
         this.meshes = {};
         this.meshes.boardPlane =
-            this.resources.items.projectsBoardPlane.scene.children[0];
+            this.resources.items.fashionBoardPlane.scene.children[0];
         this.meshes.areaLabel = new THREE.Mesh(
             new THREE.PlaneBufferGeometry(2, 0.5),
             new THREE.MeshBasicMaterial({
@@ -103,7 +103,7 @@ export default class ProjectsSection {
                     accessories6Source,
                 ],
                 floorTexture:
-                    this.resources.items.projectsThreejsJourneyFloorTexture,
+                    this.resources.items.fashionAccessoriesFloorTexture,
                 link: [
                     {
                         href: "http://127.0.0.1:5000/accessories",
@@ -121,7 +121,7 @@ export default class ProjectsSection {
                 name: "Madbox",
                 imageSources: [women1Source, women2Source, women3Source],
                 imageSourcesSecond: [women4Source, women5Source, women6Source],
-                floorTexture: this.resources.items.projectsMadboxFloorTexture,
+                floorTexture: this.resources.items.fashionWomenFloorTexture,
                 link: [
                     {
                         href: "http://127.0.0.1:3000/women1",
@@ -160,7 +160,7 @@ export default class ProjectsSection {
                 name: "Scout",
                 imageSources: [men1Source, men2Source, men3Source],
                 imageSourcesSecond: [men5Source, men4Source, men6Source],
-                floorTexture: this.resources.items.projectsScoutFloorTexture,
+                floorTexture: this.resources.items.fashionMenFloorTexture,
                 link: [
                     {
                         href: "http://127.0.0.1:3000/men1",
@@ -195,7 +195,7 @@ export default class ProjectsSection {
                 y: this.y,
             },
             halfExtents: { x: totalWidth, y: 12 },
-            data: { cameraAngle: "projects" },
+            data: { cameraAngle: "fashion" },
         });
 
         zone.on("in", (_data) => {
@@ -237,7 +237,7 @@ export default class ProjectsSection {
         }
 
         // Create project
-        const project = new Project({
+        const fashionCategory = new Fashion({
             time: this.time,
             resources: this.resources,
             objects: this.objects,
@@ -250,7 +250,7 @@ export default class ProjectsSection {
             ..._options,
         });
 
-        this.container.add(project.container);
-        this.items.push(project);
+        this.container.add(fashionCategory.container);
+        this.items.push(fashionCategory);
     }
 }

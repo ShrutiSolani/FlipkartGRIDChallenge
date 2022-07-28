@@ -4,7 +4,7 @@ import ProjectBoardMaterial from '../../Materials/ProjectBoard.js'
 import TweenLite from 'gsap/TweenLite'
 import { Power4 } from 'gsap/EasePack'
 
-export default class Project
+export default class Fashion
 {
     constructor(_options)
     {
@@ -67,9 +67,9 @@ export default class Project
 
             // Create structure with collision
             this.objects.add({
-                base: this.resources.items.projectsBoardStructure.scene,
-                collision: this.resources.items.projectsBoardCollision.scene,
-                floorShadowTexture: this.resources.items.projectsBoardStructureFloorShadowTexture,
+                base: this.resources.items.fashionBoardStructure.scene,
+                collision: this.resources.items.fashionBoardCollision.scene,
+                floorShadowTexture: this.resources.items.fashionBoardStructureFloorShadowTexture,
                 offset: new THREE.Vector3(board.x, board.y, 0),
                 rotation: new THREE.Euler(0, 0, 0),
                 duplicated: true,
@@ -140,9 +140,9 @@ export default class Project
 
             // Create structure with collision
             this.objects.add({
-                base: this.resources.items.projectsBoardStructure.scene,
-                collision: this.resources.items.projectsBoardCollision.scene,
-                floorShadowTexture: this.resources.items.projectsBoardStructureFloorShadowTexture,
+                base: this.resources.items.fashionBoardStructure.scene,
+                collision: this.resources.items.fashionBoardCollision.scene,
+                floorShadowTexture: this.resources.items.fashionBoardStructureFloorShadowTexture,
                 offset: new THREE.Vector3(board.x, board.y, 0),
                 rotation: new THREE.Euler(0, 0, 0),
                 duplicated: true,
@@ -200,8 +200,6 @@ export default class Project
 
         // Texture
         this.floor.texture = this.floorTexture
-        this.floor.texture.magFilter = THREE.NearestFilter
-        this.floor.texture.minFilter = THREE.LinearFilter
 
         // Geometry
         this.floor.geometry = this.geometries.floor
@@ -223,20 +221,19 @@ export default class Project
                 position: new THREE.Vector2(this.x + link.x, this.y + this.floor.y + link.y),
                 halfExtents: new THREE.Vector2(link.halfExtents.x, link.halfExtents.y)
             })
+
+            this.floor.areaLabel = this.meshes.areaLabel.clone()
+            this.floor.areaLabel.position.x = link.x
+            this.floor.areaLabel.position.y = link.y
+            this.floor.areaLabel.position.z = 0.001
+            this.floor.areaLabel.matrixAutoUpdate = false
+            this.floor.areaLabel.updateMatrix()
+            this.floor.container.add(this.floor.areaLabel)
             
             this.floor.area.on('interact', () =>
             {
                 window.open(link.href, '_blank')
             })
         }
-
-        // Area label
-        this.floor.areaLabel = this.meshes.areaLabel.clone()
-        // this.floor.areaLabel.position.x = this.link.x
-        // this.floor.areaLabel.position.y = this.link.y
-        this.floor.areaLabel.position.z = 0.001
-        this.floor.areaLabel.matrixAutoUpdate = false
-        this.floor.areaLabel.updateMatrix()
-        this.floor.container.add(this.floor.areaLabel)
     }
 }
