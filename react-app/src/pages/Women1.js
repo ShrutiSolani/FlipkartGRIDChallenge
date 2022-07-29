@@ -43,7 +43,7 @@ const Women1 = () => {
             </p>
 
             <h4>
-              <p class="m-text8 p-b-13">Rs 799</p>
+              <p class="m-text8 p-b-13">₹ 799</p>
             </h4>
 
             <div class="flex-m flex-w p-b-10">

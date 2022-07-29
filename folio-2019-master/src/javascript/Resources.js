@@ -30,6 +30,7 @@ import introInstructionsControlsSource from "../models/intro/instructions/contro
 import introInstructionsOtherSource from "../models/intro/instructions/other.png";
 import introArrowKeyBaseSource from "../models/intro/arrowKey/base.glb";
 import introArrowKeyCollisionSource from "../models/intro/arrowKey/collision.glb";
+import chatLogoSource from "../models/intro/chat.png";
 
 // Crossroads
 import crossroadsStaticFloorShadowSource from "../models/crossroads/static/floorShadow.png";
@@ -189,6 +190,11 @@ export default class Resources extends EventEmitter {
             {
                 name: "introArrowKeyCollision",
                 source: introArrowKeyCollisionSource,
+            },
+            {
+                name: "chatLogo",
+                source: chatLogoSource,
+                type: "texture"
             },
 
             // Intro
