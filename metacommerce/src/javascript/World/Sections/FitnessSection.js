@@ -21,6 +21,7 @@ export default class FitnessSection {
         this.setLinksRow2();
         this.setLinksRow3();
         this.setLinksRow4();
+        this.setChat();
     }
 
     setStatic() {
@@ -132,7 +133,89 @@ export default class FitnessSection {
             i++;
         }
     }
+    setChat() {
+        // Set up
+        this.links = {};
+        this.links.x = 16;
+        this.links.y = 1;
+        this.links.halfExtents = {};
+        this.links.halfExtents.x = 1.5;
+        this.links.halfExtents.y = 1;
+        this.links.distanceBetween = 2.8;
+        this.links.labelWidth = this.links.halfExtents.x * 2 + 1;
+        this.links.labelGeometry = new THREE.PlaneBufferGeometry(
+            this.links.labelWidth * 0.75,
+            this.links.labelWidth * 0.2,
+            1,
+            1
+        );
+        this.links.labelOffset = -1.4;
+        this.links.items = [];
 
+        this.links.container = new THREE.Object3D();
+        this.links.container.matrixAutoUpdate = false;
+        this.container.add(this.links.container);
+
+        // Options
+        this.links.options = [
+            {
+                href: "http://localhost:3001/",
+                labelTexture: this.resources.items.chatLabelTexture,
+            },
+        ];
+
+        // Create each link
+        let i = 0;
+        for (const _option of this.links.options) {
+            // Set up
+            const item = {};
+            item.x = this.x + this.links.x + this.links.distanceBetween * i;
+            item.y = this.y + this.links.y;
+            item.href = _option.href;
+
+            // Create area
+            item.area = this.areas.add({
+                position: new THREE.Vector2(item.x, item.y),
+                halfExtents: new THREE.Vector2(
+                    this.links.halfExtents.x,
+                    this.links.halfExtents.y
+                ),
+            });
+            item.area.on("interact", () => {
+                window.open(_option.href, "_blank");
+            });
+
+            // Texture
+            item.texture = _option.labelTexture;
+            item.texture.magFilter = THREE.NearestFilter;
+            item.texture.minFilter = THREE.LinearFilter;
+
+            // Create label
+            item.labelMesh = new THREE.Mesh(
+                this.links.labelGeometry,
+                new THREE.MeshBasicMaterial({
+                    wireframe: false,
+                    color: 0xffffff,
+                    alphaMap: _option.labelTexture,
+                    depthTest: true,
+                    depthWrite: false,
+                    transparent: true,
+                })
+            );
+            item.labelMesh.position.x =
+                item.x + this.links.labelWidth * 0.5 - this.links.halfExtents.x;
+            item.labelMesh.position.y = item.y + this.links.labelOffset + 1.4;
+            item.labelMesh.matrixAutoUpdate = false;
+            item.labelMesh.updateMatrix();
+            this.links.container.add(item.labelMesh);
+
+            // Save
+            this.links.items.push(item);
+
+            i++;
+        }
+    }
+    
     setLinksRow2() {
         // Set up
         this.links = {};

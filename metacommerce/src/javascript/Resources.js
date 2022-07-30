@@ -30,7 +30,7 @@ import introInstructionsControlsSource from "../models/intro/instructions/contro
 import introInstructionsOtherSource from "../models/intro/instructions/other.png";
 import introArrowKeyBaseSource from "../models/intro/arrowKey/base.glb";
 import introArrowKeyCollisionSource from "../models/intro/arrowKey/collision.glb";
-import chatLogoSource from "../models/intro/chat.png";
+// import chatLogoSource from "../models/intro/chat.png";
 
 // Crossroads
 import crossroadsStaticFloorShadowSource from "../models/crossroads/static/floorShadow.png";
@@ -90,6 +90,7 @@ import skillToolsSource from "../models/fitness/static/skilltools.png";
 import treadmillSource from "../models/fitness/static/treadmill.png";
 import volleyBallSource from "../models/fitness/static/vball.png";
 import weightsSource from "../models/fitness/static/weights.png";
+import chatSource from "../models/fitness/static/chat.png";
 
 import informationActivitiesSource from "../models/information/static/activities.png";
 
@@ -195,11 +196,6 @@ export default class Resources extends EventEmitter {
             {
                 name: "introArrowKeyCollision",
                 source: introArrowKeyCollisionSource,
-            },
-            {
-                name: "chatLogo",
-                source: chatLogoSource,
-                type: "texture",
             },
 
             // Intro
@@ -397,6 +393,11 @@ export default class Resources extends EventEmitter {
             {
                 name: "weightsLabel",
                 source: weightsSource,
+                type: "texture",
+            },
+            {
+                name: "chatLabel",
+                source: chatSource,
                 type: "texture",
             },
             // Konami

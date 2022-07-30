@@ -24,7 +24,6 @@ export default class IntroSection
         this.setStatic()
         this.setInstructions()
         this.setOtherInstructions()
-        this.setChatLogo()
     }
 
     setStatic()
@@ -140,51 +139,6 @@ export default class IntroSection
         this.otherInstructions.label.mesh = new THREE.Mesh(this.otherInstructions.label.geometry, this.otherInstructions.label.material)
         this.otherInstructions.label.mesh.matrixAutoUpdate = false
         this.otherInstructions.container.add(this.otherInstructions.label.mesh)
-    }
-
-    setChatLogo()
-    {
-        if(this.config.touch)
-        {
-            return
-        }
-
-        this.chatLogo = {}
-        this.chatLogo.x = 10
-        this.chatLogo.y = -2
-
-        // Container
-        this.chatLogo.container = new THREE.Object3D()
-        this.chatLogo.container.position.x = this.chatLogo.x
-        this.chatLogo.container.position.y = this.chatLogo.y
-        this.chatLogo.container.matrixAutoUpdate = false
-        this.chatLogo.container.updateMatrix()
-        this.container.add(this.chatLogo.container)
-
-        // Label
-        this.chatLogo.label = {}
-
-        this.chatLogo.label.geometry = new THREE.PlaneBufferGeometry(3, 3, 0, 0)
-
-        this.chatLogo.label.texture = this.resources.items.chatLogoTexture
-        this.chatLogo.label.texture.magFilter = THREE.NearestFilter
-        this.chatLogo.label.texture.minFilter = THREE.LinearFilter
-
-        this.chatLogo.label.material = new THREE.MeshBasicMaterial({ 
-            transparent: true, 
-            alphaMap: this.chatLogo.label.texture, 
-            color: 0xffffff, 
-            depthWrite: false, 
-            opacity: 0 
-        })
-
-        this.chatLogo.label.mesh = new THREE.Mesh(
-            this.chatLogo.label.geometry, 
-            this.chatLogo.label.material
-        )
-
-        this.chatLogo.label.mesh.matrixAutoUpdate = false
-        this.chatLogo.container.add(this.chatLogo.label.mesh)
     }
 
     
