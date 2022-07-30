@@ -61,7 +61,6 @@ import fashionWomenFloorSource from "../models/fashion/labels/women.png";
 import fashionMenFloorSource from "../models/fashion/labels/men.png";
 import fashionElectronicsFloorSource from "../models/fashion/labels/electronics.png";
 
-
 // Fitness
 import fitnessStaticBaseSource from "../models/fitness/static/base.glb";
 import fitnessStaticCollisionSource from "../models/fitness/static/collision.glb";
@@ -92,11 +91,11 @@ import treadmillSource from "../models/fitness/static/treadmill.png";
 import volleyBallSource from "../models/fitness/static/vball.png";
 import weightsSource from "../models/fitness/static/weights.png";
 
-
 import informationActivitiesSource from "../models/information/static/activities.png";
 
-
 import areaOpenSource from "../models/area/open.png";
+import areaEnterSource from "../models/area/enter.png";
+import areaKeyEnterSource from "../models/area/keyEnter.png";
 
 // Konami
 import konamiLabelTouchSource from "../models/konami/label-touch.png";
@@ -153,6 +152,12 @@ export default class Resources extends EventEmitter {
             },
 
             { name: "areaOpen", source: areaOpenSource, type: "texture" },
+            { name: "areaEnter", source: areaEnterSource, type: "texture" },
+            {
+                name: "areaKeyEnter",
+                source: areaKeyEnterSource,
+                type: "texture",
+            },
 
             // Intro
             { name: "introStaticBase", source: introStaticBaseSource },
@@ -194,7 +199,7 @@ export default class Resources extends EventEmitter {
             {
                 name: "chatLogo",
                 source: chatLogoSource,
-                type: "texture"
+                type: "texture",
             },
 
             // Intro
@@ -224,7 +229,7 @@ export default class Resources extends EventEmitter {
                 source: carDefaultBackLightsReverseSource,
             },
             { name: "carDefaultAntena", source: carDefaultAntenaSource },
-        
+
             // Car default
             {
                 name: "carCyberTruckChassis",
@@ -271,7 +276,7 @@ export default class Resources extends EventEmitter {
                 source: fashionMenFloorSource,
                 type: "texture",
             },
-        
+
             // Fitness
             {
                 name: "fitnessStaticBase",
@@ -347,7 +352,7 @@ export default class Resources extends EventEmitter {
             {
                 name: "dumbelLabel",
                 source: dumbelSource,
-                type: "texture"
+                type: "texture",
             },
             {
                 name: "basketBallLabel",
