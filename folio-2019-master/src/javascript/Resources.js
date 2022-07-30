@@ -20,21 +20,17 @@ import matcapMetalSource from "../models/matcaps/metal.png";
 import matcapVibrantBlueSource from "../models/matcaps/vibrantBlue.png";
 import matcapGoldSource from "../models/matcaps/gold.png";
 
-// Avatars
-import avatarManSource from "../models/startingScreen/man.glb";
-
 // Intro
 import introStaticBaseSource from "../models/intro/static/base.glb";
 import introStaticCollisionSource from "../models/intro/static/collision.glb";
 import introStaticFloorShadowSource from "../models/intro/static/floorShadow.png";
-
 import introInstructionsLabelsSource from "../models/intro/instructions/labels.glb";
 import introInstructionsArrowsSource from "../models/intro/instructions/arrows.png";
 import introInstructionsControlsSource from "../models/intro/instructions/controls.png";
 import introInstructionsOtherSource from "../models/intro/instructions/other.png";
-
 import introArrowKeyBaseSource from "../models/intro/arrowKey/base.glb";
 import introArrowKeyCollisionSource from "../models/intro/arrowKey/collision.glb";
+import chatLogoSource from "../models/intro/chat.png";
 
 // Crossroads
 import crossroadsStaticFloorShadowSource from "../models/crossroads/static/floorShadow.png";
@@ -47,9 +43,6 @@ import carDefaultWheelSource from "../models/car/default/wheel.glb";
 import carDefaultBackLightsBrakeSource from "../models/car/default/backLightsBrake.glb";
 import carDefaultBackLightsReverseSource from "../models/car/default/backLightsReverse.glb";
 import carDefaultAntenaSource from "../models/car/default/antena.glb";
-// import carDefaultBunnyEarLeftSource from '../models/car/default/bunnyEarLeft.glb'
-// import carDefaultBunnyEarRightSource from '../models/car/default/bunnyEarRight.glb'
-
 // Car cyber truck
 import carCyberTruckChassisSource from "../models/car/cyberTruck/chassis.glb";
 import carCyberTruckWheelSource from "../models/car/cyberTruck/wheel.glb";
@@ -57,29 +50,17 @@ import carCyberTruckBackLightsBrakeSource from "../models/car/cyberTruck/backLig
 import carCyberTruckBackLightsReverseSource from "../models/car/cyberTruck/backLightsReverse.glb";
 import carCyberTruckAntenaSource from "../models/car/cyberTruck/antena.glb";
 
-// Projects
-import projectsBoardStructureSource from "../models/projects/board/structure.glb";
-import projectsBoardCollisionSource from "../models/projects/board/collision.glb";
-import projectsBoardStructureFloorShadowSource from "../models/projects/board/floorShadow.png";
-import projectsBoardPlaneSource from "../models/projects/board/plane.glb";
+// fashion
+import fashionBoardStructureSource from "../models/fashion/board/structure.glb";
+import fashionBoardCollisionSource from "../models/fashion/board/collision.glb";
+import fashionBoardStructureFloorShadowSource from "../models/fashion/board/floorShadow.png";
+import fashionBoardPlaneSource from "../models/fashion/board/plane.glb";
 
-import projectsDistinctionsAwwwardsBaseSource from "../models/projects/distinctions/awwwards/base.glb";
-import projectsDistinctionsAwwwardsCollisionSource from "../models/projects/distinctions/awwwards/collision.glb";
-import projectsDistinctionsFWABaseSource from "../models/projects/distinctions/fwa/base.glb";
-import projectsDistinctionsFWACollisionSource from "../models/projects/distinctions/fwa/collision.glb";
-import projectsDistinctionsCSSDABaseSource from "../models/projects/distinctions/cssda/base.glb";
-import projectsDistinctionsCSSDACollisionSource from "../models/projects/distinctions/cssda/collision.glb";
+import fashionAccessoriesFloorSource from "../models/fashion/labels/accessories.png";
+import fashionWomenFloorSource from "../models/fashion/labels/women.png";
+import fashionMenFloorSource from "../models/fashion/labels/men.png";
+import fashionElectronicsFloorSource from "../models/fashion/labels/electronics.png";
 
-import projectsThreejsJourneyFloorSource from "../models/projects/threejsJourney/test.png";
-import projectsMadboxFloorSource from "../models/projects/madbox/women.png";
-import projectsScoutFloorSource from "../models/projects/scout/men.png";
-import projectsChartogneFloorSource from "../models/projects/chartogne/electronics.png";
-import projectsZenlyFloorSource from "../models/projects/zenly/floorTexture.png";
-import projectsCitrixRedbullFloorSource from "../models/projects/citrixRedbull/floorTexture.png";
-import projectsPriorHoldingsFloorSource from "../models/projects/priorHoldings/floorTexture.png";
-import projectsOranoFloorSource from "../models/projects/orano/floorTexture.png";
-// import projectsGleecChatFloorSource from '../models/projects/gleecChat/floorTexture.png'
-import projectsKepplerFloorSource from "../models/projects/keppler/floorTexture.png";
 
 // Fitness
 import fitnessStaticBaseSource from "../models/fitness/static/base.glb";
@@ -90,15 +71,8 @@ import fitnessStaticFloorShadowSource from "../models/fitness/static/floorShadow
 import informationStaticBaseSource from "../models/information/static/base.glb";
 import informationStaticCollisionSource from "../models/information/static/collision.glb";
 import informationStaticFloorShadowSource from "../models/information/static/floorShadow.png";
-
 import informationBaguetteBaseSource from "../models/information/baguette/base.glb";
 import informationBaguetteCollisionSource from "../models/information/baguette/collision.glb";
-
-// import informationContactTwitterLabelSource from "../models/information/static/MICROWAVE.png";
-// import informationContactGithubLabelSource from "../models/information/static/MICROWAVE.png";
-// import informationContactLinkedinLabelSource from "../models/information/static/tv.png";
-// import informationContactMailLabelSource from "../models/information/static/tv.png";
-// import informationFridgeSource from "../models/information/static/fridge.png";
 
 import microwaveSource from "../models/information/static/MICROWAVE.png";
 import televisionSource from "../models/information/static/tv.png";
@@ -121,60 +95,10 @@ import weightsSource from "../models/fitness/static/weights.png";
 
 import informationActivitiesSource from "../models/information/static/activities.png";
 
-// Playground
-// import playgroundStaticFloorShadowSource from "../models/playground/static/floorShadow.png";
-// import playgroundStaticBaseSource from "../models/playground/static/base.glb";
-// import playgroundStaticCollisionSource from "../models/playground/static/collision.glb";
 
-// Brick
-// import brickBaseSource from "../models/brick/base.glb";
-// import brickCollisionSource from "../models/brick/collision.glb";
-
-// Horn
-// import hornBaseSource from "../models/horn/base.glb";
-// import hornCollisionSource from "../models/horn/collision.glb";
-
-// Awwwards trophy
-// import webbyTrophyBaseSource from "../models/webbyTrophy/base.glb";
-// import webbyTrophyCollisionSource from "../models/webbyTrophy/collision.glb";
-
-// Lemon
-// import lemonBaseSource from "../models/lemon/base.glb";
-// import lemonCollisionSource from "../models/lemon/collision.glb";
-
-// Bowling ball
-// import bowlingBallBaseSource from "../models/bowlingBall/base.glb";
-// import bowlingBallCollisionSource from "../models/bowlingBall/collision.glb";
-
-// Bowling pin
-// import bowlingPinBaseSource from "../models/bowlingPin/base.glb";
-// import bowlingPinCollisionSource from "../models/bowlingPin/collision.glb";
-
-// Area
-// import areaKeyEnterSource from "../models/area/keyEnter.png";
-// import areaEnterSource from "../models/area/enter.png";
 import areaOpenSource from "../models/area/open.png";
-// import areaResetSource from "../models/area/reset.png";
-// import areaQuestionMarkSource from "../models/area/questionMark.png";
-
-// Tiles
-// import tilesABaseSource from "../models/tiles/a/base.glb";
-// import tilesACollisionSource from "../models/tiles/a/collision.glb";
-
-// import tilesBBaseSource from "../models/tiles/b/base.glb";
-// import tilesBCollisionSource from "../models/tiles/b/collision.glb";
-
-// import tilesCBaseSource from "../models/tiles/c/base.glb";
-// import tilesCCollisionSource from "../models/tiles/c/collision.glb";
-
-// import tilesDBaseSource from "../models/tiles/d/base.glb";
-// import tilesDCollisionSource from "../models/tiles/d/collision.glb";
-
-// import tilesEBaseSource from "../models/tiles/e/base.glb";
-// import tilesECollisionSource from "../models/tiles/e/collision.glb";
 
 // Konami
-import konamiLabelSource from "../models/konami/label.png";
 import konamiLabelTouchSource from "../models/konami/label-touch.png";
 
 // Wigs
@@ -230,8 +154,6 @@ export default class Resources extends EventEmitter {
 
             { name: "areaOpen", source: areaOpenSource, type: "texture" },
 
-            // Avatars
-            { name: "avatarMan", source: avatarManSource },
             // Intro
             { name: "introStaticBase", source: introStaticBaseSource },
             {
@@ -269,6 +191,11 @@ export default class Resources extends EventEmitter {
                 name: "introArrowKeyCollision",
                 source: introArrowKeyCollisionSource,
             },
+            {
+                name: "chatLogo",
+                source: chatLogoSource,
+                type: "texture"
+            },
 
             // Intro
             {
@@ -297,9 +224,7 @@ export default class Resources extends EventEmitter {
                 source: carDefaultBackLightsReverseSource,
             },
             { name: "carDefaultAntena", source: carDefaultAntenaSource },
-            // { name: 'carDefaultBunnyEarLeft', source: carDefaultBunnyEarLeftSource },
-            // { name: 'carDefaultBunnyEarRight', source: carDefaultBunnyEarRightSource },
-
+        
             // Car default
             {
                 name: "carCyberTruckChassis",
@@ -318,92 +243,35 @@ export default class Resources extends EventEmitter {
 
             // Project
             {
-                name: "projectsBoardStructure",
-                source: projectsBoardStructureSource,
+                name: "fashionBoardStructure",
+                source: fashionBoardStructureSource,
             },
             {
-                name: "projectsBoardCollision",
-                source: projectsBoardCollisionSource,
+                name: "fashionBoardCollision",
+                source: fashionBoardCollisionSource,
             },
             {
-                name: "projectsBoardStructureFloorShadow",
-                source: projectsBoardStructureFloorShadowSource,
+                name: "fashionBoardStructureFloorShadow",
+                source: fashionBoardStructureFloorShadowSource,
                 type: "texture",
             },
-            { name: "projectsBoardPlane", source: projectsBoardPlaneSource },
-
+            { name: "fashionBoardPlane", source: fashionBoardPlaneSource },
             {
-                name: "projectsDistinctionsAwwwardsBase",
-                source: projectsDistinctionsAwwwardsBaseSource,
-            },
-            {
-                name: "projectsDistinctionsAwwwardsCollision",
-                source: projectsDistinctionsAwwwardsCollisionSource,
-            },
-            {
-                name: "projectsDistinctionsFWABase",
-                source: projectsDistinctionsFWABaseSource,
-            },
-            {
-                name: "projectsDistinctionsFWACollision",
-                source: projectsDistinctionsFWACollisionSource,
-            },
-            {
-                name: "projectsDistinctionsCSSDABase",
-                source: projectsDistinctionsCSSDABaseSource,
-            },
-            {
-                name: "projectsDistinctionsCSSDACollision",
-                source: projectsDistinctionsCSSDACollisionSource,
-            },
-
-            {
-                name: "projectsThreejsJourneyFloor",
-                source: projectsThreejsJourneyFloorSource,
+                name: "fashionAccessoriesFloor",
+                source: fashionAccessoriesFloorSource,
                 type: "texture",
             },
             {
-                name: "projectsMadboxFloor",
-                source: projectsMadboxFloorSource,
+                name: "fashionWomenFloor",
+                source: fashionWomenFloorSource,
                 type: "texture",
             },
             {
-                name: "projectsScoutFloor",
-                source: projectsScoutFloorSource,
+                name: "fashionMenFloor",
+                source: fashionMenFloorSource,
                 type: "texture",
             },
-            {
-                name: "projectsChartogneFloor",
-                source: projectsChartogneFloorSource,
-                type: "texture",
-            },
-            {
-                name: "projectsZenlyFloor",
-                source: projectsZenlyFloorSource,
-                type: "texture",
-            },
-            {
-                name: "projectsCitrixRedbullFloor",
-                source: projectsCitrixRedbullFloorSource,
-                type: "texture",
-            },
-            {
-                name: "projectsPriorHoldingsFloor",
-                source: projectsPriorHoldingsFloorSource,
-                type: "texture",
-            },
-            {
-                name: "projectsOranoFloor",
-                source: projectsOranoFloorSource,
-                type: "texture",
-            },
-            // { name: 'projectsGleecChatFloor', source: projectsGleecChatFloorSource, type: 'texture' },
-            {
-                name: "projectsKepplerFloor",
-                source: projectsKepplerFloorSource,
-                type: "texture",
-            },
-
+        
             // Fitness
             {
                 name: "fitnessStaticBase",
@@ -527,7 +395,6 @@ export default class Resources extends EventEmitter {
                 type: "texture",
             },
             // Konami
-            { name: "konamiLabel", source: konamiLabelSource, type: "texture" },
             {
                 name: "konamiLabelTouch",
                 source: konamiLabelTouchSource,

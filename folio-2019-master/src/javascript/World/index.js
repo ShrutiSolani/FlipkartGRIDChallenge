@@ -7,23 +7,16 @@ import Zones from "./Zones.js";
 import Objects from "./Objects.js";
 import Car from "./Car.js";
 import Areas from "./Areas.js";
-import Tiles from "./Tiles.js";
 import Walls from "./Walls.js";
 import IntroSection from "./Sections/IntroSection.js";
-import ProjectsSection from "./Sections/ProjectsSection.js";
+import FashionSection from "./Sections/FashionSection.js";
 import CrossroadsSection from "./Sections/CrossroadsSection.js";
 import InformationSection from "./Sections/InformationSection.js";
 import FitnessSection from "./Sections/FitnessSection.js";
-// import PlaygroundSection from "./Sections/PlaygroundSection.js";
-// import DistinctionASection from './Sections/DistinctionASection.js'
-// import DistinctionBSection from './Sections/DistinctionBSection.js'
-// import DistinctionCSection from './Sections/DistinctionCSection.js'
-// import DistinctionDSection from './Sections/DistinctionDSection.js'
 import Controls from "./Controls.js";
 import Sounds from "./Sounds.js";
 import { TweenLite } from "gsap/TweenLite";
 import { Power2 } from "gsap/EasePack";
-import EasterEggs from "./EasterEggs.js";
 
 export default class {
     constructor(_options) {
@@ -68,10 +61,8 @@ export default class {
         this.setObjects();
         this.setCar();
         this.areas.car = this.car;
-        // this.setTiles();
         this.setWalls();
         this.setSections();
-        // this.setEasterEggs();
     }
 
     setReveal() {
@@ -432,11 +423,6 @@ export default class {
             debug: this.debugFolder,
         });
         this.container.add(this.objects.container);
-
-        // window.requestAnimationFrame(() =>
-        // {
-        //     this.objects.merge.update()
-        // })
     }
 
     setCar() {
@@ -475,38 +461,6 @@ export default class {
             debug: this.debugFolder,
         };
 
-        // // Distinction A
-        // this.sections.distinctionA = new DistinctionASection({
-        //     ...options,
-        //     x: 0,
-        //     y: - 15
-        // })
-        // this.container.add(this.sections.distinctionA.container)
-
-        // // Distinction B
-        // this.sections.distinctionB = new DistinctionBSection({
-        //     ...options,
-        //     x: 0,
-        //     y: - 15
-        // })
-        // this.container.add(this.sections.distinctionB.container)
-
-        // // Distinction C
-        // this.sections.distinctionC = new DistinctionCSection({
-        //     ...options,
-        //     x: 0,
-        //     y: 0
-        // })
-        // this.container.add(this.sections.distinctionC.container)
-
-        // // Distinction D
-        // this.sections.distinctionD = new DistinctionDSection({
-        //     ...options,
-        //     x: 0,
-        //     y: 0
-        // })
-        // this.container.add(this.sections.distinctionD.container)
-
         // Intro
         this.sections.intro = new IntroSection({
             ...options,
@@ -523,57 +477,27 @@ export default class {
         });
         this.container.add(this.sections.crossroads.container);
 
-        // Projects
-        this.sections.projects = new ProjectsSection({
+        // Fashion
+        this.sections.fashioncategories = new FashionSection({
             ...options,
             x: 30,
-            y: -30,
-            // x: 0,
-            // y: 0
+            y: -30
         });
-        this.container.add(this.sections.projects.container);
+        this.container.add(this.sections.fashioncategories.container);
 
         // Information
         this.sections.information = new InformationSection({
             ...options,
             x: -20,
-            y: -45,
-            // x: 0,
-            // y: - 10
+            y: -45
         });
         this.container.add(this.sections.information.container);
         // Fitness
         this.sections.fitness = new FitnessSection({
             ...options,
             x: -1.2,
-            y: -10,
-            // x: 0,
-            // y: - 10
+            y: -10
         });
         this.container.add(this.sections.fitness.container);
-
-        // Playground
-        // this.sections.playground = new PlaygroundSection({
-        //     ...options,
-        //     x: -38,
-        //     y: -34,
-        //     // x: - 15,
-        //     // y: - 4
-        // });
-        // this.container.add(this.sections.playground.container);
     }
-
-    // setEasterEggs() {
-    //     this.easterEggs = new EasterEggs({
-    //         resources: this.resources,
-    //         car: this.car,
-    //         walls: this.walls,
-    //         objects: this.objects,
-    //         materials: this.materials,
-    //         areas: this.areas,
-    //         config: this.config,
-    //         physics: this.physics,
-    //     });
-    //     this.container.add(this.easterEggs.container);
-    // }
 }
