@@ -12,12 +12,9 @@ import brick6Sound from '../../sounds/bricks/brick-6.mp3'
 import brick7Sound from '../../sounds/bricks/brick-7.mp3'
 import brick8Sound from '../../sounds/bricks/brick-8.mp3'
 
-import bowlingPin1Sound from '../../sounds/bowling/pin-1.mp3'
+
 
 import carHit1Sound from '../../sounds/car-hits/car-hit-1.mp3'
-import carHit3Sound from '../../sounds/car-hits/car-hit-3.mp3'
-import carHit4Sound from '../../sounds/car-hits/car-hit-4.mp3'
-import carHit5Sound from '../../sounds/car-hits/car-hit-5.mp3'
 import carHit6Sound from '../../sounds/car-hits/alarm.mp3'
 
 import woodHit1Sound from '../../sounds/wood-hits/wood-hit-1.mp3'
@@ -81,28 +78,6 @@ export default class Sounds
                 volumeMax: 0.85,
                 rateMin: 0.5,
                 rateMax: 0.75
-            },
-            {
-                name: 'bowlingPin',
-                sounds: [bowlingPin1Sound],
-                minDelta: 0,
-                velocityMin: 1,
-                velocityMultiplier: 0.5,
-                volumeMin: 0.35,
-                volumeMax: 1,
-                rateMin: 0.1,
-                rateMax: 0.85
-            },
-            {
-                name: 'bowlingBall',
-                sounds: [bowlingPin1Sound, bowlingPin1Sound, bowlingPin1Sound],
-                minDelta: 0,
-                velocityMin: 1,
-                velocityMultiplier: 0.5,
-                volumeMin: 0.35,
-                volumeMax: 1,
-                rateMin: 0.1,
-                rateMax: 0.2
             },
             {
                 name: 'carHit',
