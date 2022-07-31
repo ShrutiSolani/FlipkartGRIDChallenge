@@ -74,19 +74,6 @@ def calculate_boundbox(list_coordinates):
     h = max(list_coordinates[:, 1]) - y
     return (x, y, w, h)
 
-
-def detectUpperBody(image):
-    cascadePath = "/home/admin1/Documents/Flipkart_Hackathon/BodyDetection/haarcascades_cuda/haarcascade_upperbody.xml"
-    result = image.copy()
-    imageGray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
-    cascade = cv2.CascadeClassifier(cascadePath)
-    Rect = cascade.detectMultiScale(imageGray, scaleFactor=1.1, minNeighbors=1, minSize=(1, 1))
-    if len(Rect) <= 0:
-        return False
-    else:
-        return Rect
-
-
 def get_face_boundbox(points, face_part):
     if face_part == 1:
         (x, y, w, h) = calculate_boundbox(points[17:22])
